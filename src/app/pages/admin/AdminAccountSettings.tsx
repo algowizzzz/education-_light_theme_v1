@@ -80,7 +80,7 @@ export function AdminAccountSettings() {
                 <div className="w-20 h-20 rounded-full bg-surface-elevated border-4 border-surface-card flex items-center justify-center flex-shrink-0 shadow-lg">
                   <User className="w-10 h-10 text-brand" />
                 </div>
-                <div className="flex-1 pt-2 md:pt-0">
+                <div className="flex-1 pt-2 md:pt-10">
                   <h2 className="text-xl font-bold text-text-heading">{adminInfo.name}</h2>
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
                     <span className="inline-flex items-center text-sm text-text-label">
@@ -117,8 +117,8 @@ export function AdminAccountSettings() {
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <User className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <User className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Name</Label>
@@ -126,8 +126,8 @@ export function AdminAccountSettings() {
                     </div>
                   </div>
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <IdCard className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <IdCard className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Admin ID</Label>
@@ -135,8 +135,8 @@ export function AdminAccountSettings() {
                     </div>
                   </div>
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Mail className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Mail className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Email</Label>
@@ -144,8 +144,8 @@ export function AdminAccountSettings() {
                     </div>
                   </div>
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Shield className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Shield className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Role</Label>
@@ -153,8 +153,8 @@ export function AdminAccountSettings() {
                     </div>
                   </div>
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Clock className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Clock className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Last Login</Label>
@@ -162,8 +162,8 @@ export function AdminAccountSettings() {
                     </div>
                   </div>
                   <div className="bg-card rounded-lg p-4 border border-border-light flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-md bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <CalendarDays className="w-4 h-4 text-text-label" />
+                    <div className="w-8 h-8 rounded-md bg-brand flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CalendarDays className="w-4 h-4 text-primary-foreground" />
                     </div>
                     <div>
                       <Label className="text-xs text-text-muted uppercase tracking-wide">Account Created</Label>

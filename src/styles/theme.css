@@ -5,37 +5,36 @@
 
   /* ============================================
      BEHAVE BRIDGE — PREMIUM LIGHT THEME
-     Brand:  #1B67AB · #34B7EF · #51C1F0 · #ACD2E7
-
-     Layer depth (light → dark):
-     ┌─ Sidebar         #1B67AB  (brand blue — keeps identity)
-     ├─ Body gradient    #F0F4F8  (light blue-gray)
-     ├─ Surface-card     #FFFFFF  (white — outer section wrappers)
-     ├─ Card             #F5F8FB  (very subtle blue-gray — inner/nested)
-     └─ Surface-elevated #EBF1F7  (light blue-gray — badges, avatars)
+     Strict 5-color palette:
+       #1B67AB  (brand dark blue — primary, headings, sidebar)
+       #34B7EF  (brand medium blue — secondary, body text)
+       #51C1F0  (brand light blue — muted, chart accents)
+       #ACD2E7  (brand pale blue — surfaces, hover, badges)
+       #FEFEFE  (near-white — cards, inputs, foreground inverse)
+     Status colors (red / green / amber) retained for semantics.
      ============================================ */
 
   /* --- Core semantic tokens (shadcn/Radix) --- */
-  --background: #F0F4F8;
-  --foreground: #1A2332;
-  --card: #F5F8FB;
-  --card-foreground: #1A2332;
-  --popover: #FFFFFF;
-  --popover-foreground: #1A2332;
+  --background: #ACD2E7;
+  --foreground: #1B67AB;
+  --card: #FEFEFE;
+  --card-foreground: #1B67AB;
+  --popover: #FEFEFE;
+  --popover-foreground: #1B67AB;
   --primary: #1B67AB;
-  --primary-foreground: #FFFFFF;
-  --secondary: #EBF1F7;
+  --primary-foreground: #FEFEFE;
+  --secondary: #ACD2E7;
   --secondary-foreground: #1B67AB;
-  --muted: #E8EFF5;
-  --muted-foreground: #6B839B;
-  --accent: #EBF1F7;
+  --muted: #ACD2E7;
+  --muted-foreground: #34B7EF;
+  --accent: #ACD2E7;
   --accent-foreground: #1B67AB;
   --destructive: #DC2626;
-  --destructive-foreground: #FFFFFF;
-  --border: rgba(0, 0, 0, 0.10);
-  --input: rgba(0, 0, 0, 0.08);
-  --input-background: #FFFFFF;
-  --switch-background: #E8EFF5;
+  --destructive-foreground: #FEFEFE;
+  --border: rgba(27, 103, 171, 0.20);
+  --input: rgba(27, 103, 171, 0.15);
+  --input-background: #FEFEFE;
+  --switch-background: #ACD2E7;
   --ring: #1B67AB;
 
   /* --- Chart colors --- */
@@ -43,48 +42,48 @@
   --chart-2: #34B7EF;
   --chart-3: #51C1F0;
   --chart-4: #ACD2E7;
-  --chart-5: #76D0F7;
+  --chart-5: #51C1F0;
 
   --radius: 0.625rem;
 
-  /* --- Sidebar (brand blue) --- */
+  /* --- Sidebar (brand dark blue) --- */
   --sidebar: #1B67AB;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FFFFFF;
+  --sidebar-foreground: #FEFEFE;
+  --sidebar-primary: #FEFEFE;
   --sidebar-primary-foreground: #1B67AB;
-  --sidebar-accent: rgba(255, 255, 255, 0.15);
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: rgba(255, 255, 255, 0.20);
+  --sidebar-accent: rgba(254, 254, 254, 0.15);
+  --sidebar-accent-foreground: #FEFEFE;
+  --sidebar-border: rgba(254, 254, 254, 0.20);
   --sidebar-ring: #34B7EF;
 
   /* --- Text hierarchy --- */
-  --text-heading: #1A2332;
-  --text-label: #4A6178;
-  --text-body: #6B839B;
-  --text-muted: #94A7B8;
-  --text-inverse: #FFFFFF;
+  --text-heading: #1B67AB;
+  --text-label: #1B67AB;
+  --text-body: #34B7EF;
+  --text-muted: #51C1F0;
+  --text-inverse: #FEFEFE;
 
   /* --- Surfaces (4-tier depth) --- */
-  --surface-page: #E8EFF5;
-  --surface-card: #FFFFFF;
-  --surface-hover: #E8EFF5;
-  --surface-elevated: #EBF1F7;
+  --surface-page: #ACD2E7;
+  --surface-card: #FEFEFE;
+  --surface-hover: #ACD2E7;
+  --surface-elevated: #ACD2E7;
 
   /* --- Borders --- */
-  --border-default: rgba(0, 0, 0, 0.10);
-  --border-light: rgba(0, 0, 0, 0.06);
-  --border-strong: rgba(0, 0, 0, 0.18);
-  --surface-card-border: rgba(0, 0, 0, 0.08);
+  --border-default: rgba(27, 103, 171, 0.20);
+  --border-light: rgba(172, 210, 231, 0.50);
+  --border-strong: rgba(27, 103, 171, 0.40);
+  --surface-card-border: rgba(172, 210, 231, 0.50);
 
   /* --- Brand --- */
   --brand: #34B7EF;
   --brand-dark: #1B67AB;
   --brand-light: #51C1F0;
   --brand-accent: #ACD2E7;
-  --brand-soft: #E8F4FD;
-  --brand-softer: #F0F8FF;
+  --brand-soft: #ACD2E7;
+  --brand-softer: #FEFEFE;
 
-  /* --- Status --- */
+  /* --- Status (semantic — kept outside palette intentionally) --- */
   --status-success: #16A34A;
   --status-success-soft: rgba(22, 163, 74, 0.10);
   --status-success-border: rgba(22, 163, 74, 0.25);
@@ -100,15 +99,15 @@
 
   /* --- Table --- */
   --table-header-bg: #1B67AB;
-  --table-header-text: #FFFFFF;
-  --table-row-hover: #EBF1F7;
-  --table-stripe: #F5F8FB;
+  --table-header-text: #FEFEFE;
+  --table-row-hover: #ACD2E7;
+  --table-stripe: #FEFEFE;
 
   /* --- Badges --- */
   --badge-high: #1B67AB;
   --badge-medium: #34B7EF;
-  --badge-low-bg: #EBF1F7;
-  --badge-low-text: #4A6178;
+  --badge-low-bg: #ACD2E7;
+  --badge-low-text: #1B67AB;
 
   /* --- Font weights --- */
   --font-weight-medium: 500;
@@ -116,24 +115,24 @@
 }
 
 .dark {
-  --background: #F0F4F8;
-  --foreground: #1A2332;
-  --card: #F5F8FB;
-  --card-foreground: #1A2332;
-  --popover: #FFFFFF;
-  --popover-foreground: #1A2332;
+  --background: #ACD2E7;
+  --foreground: #1B67AB;
+  --card: #FEFEFE;
+  --card-foreground: #1B67AB;
+  --popover: #FEFEFE;
+  --popover-foreground: #1B67AB;
   --primary: #1B67AB;
-  --primary-foreground: #FFFFFF;
-  --secondary: #EBF1F7;
+  --primary-foreground: #FEFEFE;
+  --secondary: #ACD2E7;
   --secondary-foreground: #1B67AB;
-  --muted: #E8EFF5;
-  --muted-foreground: #6B839B;
-  --accent: #EBF1F7;
+  --muted: #ACD2E7;
+  --muted-foreground: #34B7EF;
+  --accent: #ACD2E7;
   --accent-foreground: #1B67AB;
   --destructive: #DC2626;
-  --destructive-foreground: #FFFFFF;
-  --border: rgba(0, 0, 0, 0.10);
-  --input: rgba(0, 0, 0, 0.08);
+  --destructive-foreground: #FEFEFE;
+  --border: rgba(27, 103, 171, 0.20);
+  --input: rgba(27, 103, 171, 0.15);
   --ring: #1B67AB;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
@@ -141,36 +140,36 @@
   --chart-2: #34B7EF;
   --chart-3: #51C1F0;
   --chart-4: #ACD2E7;
-  --chart-5: #76D0F7;
+  --chart-5: #51C1F0;
   --sidebar: #1B67AB;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FFFFFF;
+  --sidebar-foreground: #FEFEFE;
+  --sidebar-primary: #FEFEFE;
   --sidebar-primary-foreground: #1B67AB;
-  --sidebar-accent: rgba(255, 255, 255, 0.15);
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: rgba(255, 255, 255, 0.20);
+  --sidebar-accent: rgba(254, 254, 254, 0.15);
+  --sidebar-accent-foreground: #FEFEFE;
+  --sidebar-border: rgba(254, 254, 254, 0.20);
   --sidebar-ring: #34B7EF;
-  --text-heading: #1A2332;
-  --text-label: #4A6178;
-  --text-body: #6B839B;
-  --text-muted: #94A7B8;
-  --surface-page: #E8EFF5;
-  --surface-card: #FFFFFF;
-  --surface-hover: #E8EFF5;
-  --surface-elevated: #EBF1F7;
-  --border-default: rgba(0, 0, 0, 0.10);
-  --border-light: rgba(0, 0, 0, 0.06);
-  --border-strong: rgba(0, 0, 0, 0.18);
-  --surface-card-border: rgba(0, 0, 0, 0.08);
+  --text-heading: #1B67AB;
+  --text-label: #1B67AB;
+  --text-body: #34B7EF;
+  --text-muted: #51C1F0;
+  --surface-page: #ACD2E7;
+  --surface-card: #FEFEFE;
+  --surface-hover: #ACD2E7;
+  --surface-elevated: #ACD2E7;
+  --border-default: rgba(27, 103, 171, 0.20);
+  --border-light: rgba(172, 210, 231, 0.50);
+  --border-strong: rgba(27, 103, 171, 0.40);
+  --surface-card-border: rgba(172, 210, 231, 0.50);
   --brand: #34B7EF;
   --brand-dark: #1B67AB;
   --brand-light: #51C1F0;
-  --brand-soft: #E8F4FD;
-  --brand-softer: #F0F8FF;
+  --brand-soft: #ACD2E7;
+  --brand-softer: #FEFEFE;
   --table-header-bg: #1B67AB;
-  --table-header-text: #FFFFFF;
-  --table-row-hover: #EBF1F7;
-  --table-stripe: #F5F8FB;
+  --table-header-text: #FEFEFE;
+  --table-row-hover: #ACD2E7;
+  --table-stripe: #FEFEFE;
 }
 
 @theme inline {
@@ -260,17 +259,17 @@
 
   body {
     @apply text-foreground;
-    background: linear-gradient(180deg, #F0F4F8 0%, #E8EFF5 50%, #F0F4F8 100%);
+    background: linear-gradient(180deg, #FEFEFE 0%, #ACD2E7 50%, #FEFEFE 100%);
     background-attachment: fixed;
     min-height: 100vh;
   }
 
   .glass-card {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(254, 254, 254, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(172, 210, 231, 0.50);
+    box-shadow: 0 8px 32px rgba(27, 103, 171, 0.08);
   }
 
   html {
