@@ -79,15 +79,15 @@ export default function NewIncidentStep1() {
                   <button
                     key={student.id}
                     onClick={() => setSelectedStudent(student.id)}
-                    className={`p-4 border rounded-lg text-left transition-colors ${
+                    className={`p-4 border rounded-lg text-left transition-colors bg-surface-card ${
                       selectedStudent === student.id
-                        ? 'border-brand bg-surface-page'
-                        : 'border-border-default hover:bg-surface-page'
+                        ? 'border-brand shadow-md'
+                        : 'border-border-light hover:shadow-md'
                     }`}
                   >
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                        <User className="w-5 h-5 text-text-body" />
+                      <div className="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center">
+                        <User className="w-5 h-5 text-brand-dark" />
                       </div>
                       <div>
                         <p className="font-medium text-text-heading">{student.name}</p>

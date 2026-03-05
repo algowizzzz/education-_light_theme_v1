@@ -48,16 +48,14 @@ export default function TeacherDashboard() {
           </Button>
           <Button
             onClick={() => navigate('/teacher/students')}
-            variant="outline"
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft h-12 rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm h-12 rounded-lg"
           >
             <Search className="w-5 h-5 mr-2" />
             Find Student
           </Button>
           <Button
             onClick={() => navigate('/teacher/incidents')}
-            variant="outline"
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft h-12 rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm h-12 rounded-lg"
           >
             <FileText className="w-5 h-5 mr-2" />
             View My Incidents
@@ -77,8 +75,8 @@ export default function TeacherDashboard() {
                 onClick={() => navigate(`/teacher/students/${student.id}`)}
               >
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                    <User className="w-5 h-5 text-text-body" />
+                  <div className="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center">
+                    <User className="w-5 h-5 text-brand-dark" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-heading">
@@ -88,8 +86,7 @@ export default function TeacherDashboard() {
                   </div>
                 </div>
                 <Button
-                  variant="outline"
-                  className="w-full border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+                  className="w-full bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
                   onClick={(e) => {
                     e.stopPropagation();
                     navigate(`/teacher/students/${student.id}`);

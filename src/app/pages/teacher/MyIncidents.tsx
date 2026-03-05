@@ -215,7 +215,7 @@ export default function MyIncidents() {
                   setDateFilter('all');
                 }}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 Clear Filters
               </Button>
@@ -227,7 +227,7 @@ export default function MyIncidents() {
             <div className="md:hidden space-y-3">
               {filteredIncidents.map((incident) => (
                 <Link key={incident.id} to={`/teacher/incidents/${incident.id}`}>
-                  <div className="bg-surface-card border border-border-default rounded-lg p-4 hover:bg-surface-page active:bg-surface-elevated transition-colors">
+                  <div className="bg-surface-card border border-border-default rounded-lg p-4 hover:bg-surface-page active:bg-status-info-soft transition-colors">
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <h3 className="font-semibold text-text-heading">{incident.student}</h3>
@@ -340,7 +340,7 @@ export default function MyIncidents() {
               variant="outline"
               size="sm"
               disabled
-              className="border-border-default text-text-body"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
             >
               Previous
             </Button>
@@ -348,7 +348,7 @@ export default function MyIncidents() {
               variant="outline"
               size="sm"
               disabled
-              className="border-border-default text-text-body"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
             >
               Next
             </Button>
