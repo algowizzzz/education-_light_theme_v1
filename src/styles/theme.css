@@ -85,16 +85,16 @@
 
   /* --- Status (semantic — kept outside palette intentionally) --- */
   --status-success: #16A34A;
-  --status-success-soft: rgba(22, 163, 74, 0.10);
+  --status-success-soft: rgba(22, 163, 74, 0.20);
   --status-success-border: rgba(22, 163, 74, 0.25);
   --status-error: #DC2626;
-  --status-error-soft: rgba(220, 38, 38, 0.08);
+  --status-error-soft: rgba(220, 38, 38, 0.18);
   --status-error-border: rgba(220, 38, 38, 0.20);
   --status-warning: #D97706;
-  --status-warning-soft: rgba(217, 119, 6, 0.10);
+  --status-warning-soft: rgba(217, 119, 6, 0.20);
   --status-warning-border: rgba(217, 119, 6, 0.25);
   --status-info: #1B67AB;
-  --status-info-soft: rgba(27, 103, 171, 0.10);
+  --status-info-soft: rgba(27, 103, 171, 0.20);
   --status-info-border: rgba(27, 103, 171, 0.25);
 
   /* --- Table --- */
