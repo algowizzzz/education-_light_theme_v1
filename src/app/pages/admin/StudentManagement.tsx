@@ -118,7 +118,7 @@ export default function StudentManagement() {
             <div className="flex gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="border-border-default">
+                  <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                     <Upload className="w-4 h-4 md:mr-2" />
                     <span className="hidden md:inline">Bulk Actions</span>
                   </Button>
@@ -245,7 +245,7 @@ export default function StudentManagement() {
             <div className="flex gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="border-border-default">
+                  <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                     Bulk Actions
                   </Button>
                 </DropdownMenuTrigger>

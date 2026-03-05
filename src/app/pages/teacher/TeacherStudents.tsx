@@ -165,7 +165,7 @@ export default function TeacherStudents() {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+                            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
                             onClick={(e) => {
                               e.stopPropagation();
                               navigate(`/teacher/students/${student.id}`);

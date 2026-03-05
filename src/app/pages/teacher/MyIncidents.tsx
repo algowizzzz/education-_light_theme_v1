@@ -316,7 +316,7 @@ export default function MyIncidents() {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="border-border-strong text-text-heading hover:bg-surface-page"
+                            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
                           >
                             View Details
                           </Button>

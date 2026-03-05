@@ -208,7 +208,7 @@ export default function TeacherManagement() {
               <Button
                 variant="outline"
                 onClick={() => navigate('/admin/teachers/bulk-import')}
-                className="border-border-default"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 <Upload className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Bulk Import</span>

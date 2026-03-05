@@ -245,7 +245,7 @@ export default function ParentManagement() {
               <Button
                 variant="outline"
                 onClick={() => navigate('/admin/parents/bulk-link')}
-                className="border-border-default"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 <Link2 className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Bulk Link</span>
