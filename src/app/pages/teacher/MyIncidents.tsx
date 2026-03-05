@@ -124,15 +124,15 @@ export default function MyIncidents() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Resolved':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-success-soft text-status-success border border-status-success-border';
       case 'Partial':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
       case 'Escalated':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
       case 'Follow-up':
-        return 'bg-surface-elevated text-text-label';
+        return 'bg-status-info-soft text-status-info border border-status-info-border';
       default:
-        return 'bg-surface-page text-text-label';
+        return 'bg-status-info-soft text-status-info border border-status-info-border';
     }
   };
 
@@ -187,7 +187,7 @@ export default function MyIncidents() {
 
           <Button
             onClick={() => navigate('/teacher/incidents/new')}
-            className="bg-brand hover:bg-brand-dark text-white whitespace-nowrap"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm whitespace-nowrap"
           >
             <Plus className="w-4 h-4 mr-2" />
             Log New Incident

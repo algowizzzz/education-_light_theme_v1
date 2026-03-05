@@ -80,11 +80,11 @@ export default function CasesList() {
   const getPriorityBadge = (priority: string) => {
     switch (priority) {
       case 'high':
-        return <Badge className="bg-brand text-white">High</Badge>;
+        return <Badge className="bg-status-error-soft text-status-error border border-status-error-border">High</Badge>;
       case 'medium':
-        return <Badge className="bg-badge-medium text-white">Medium</Badge>;
+        return <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">Medium</Badge>;
       case 'low':
-        return <Badge className="bg-surface-elevated text-text-label">Low</Badge>;
+        return <Badge className="bg-status-info-soft text-status-info border border-status-info-border">Low</Badge>;
       default:
         return null;
     }
@@ -93,11 +93,11 @@ export default function CasesList() {
   const getSeverityBadge = (severity: string) => {
     switch (severity) {
       case 'High':
-        return <Badge className="bg-brand-dark text-white">{severity}</Badge>;
+        return <Badge className="bg-status-error-soft text-status-error border border-status-error-border">{severity}</Badge>;
       case 'Medium':
-        return <Badge className="bg-badge-medium text-white">{severity}</Badge>;
+        return <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">{severity}</Badge>;
       case 'Low':
-        return <Badge className="bg-surface-elevated text-text-label">{severity}</Badge>;
+        return <Badge className="bg-status-info-soft text-status-info border border-status-info-border">{severity}</Badge>;
       default:
         return <Badge variant="outline">{severity}</Badge>;
     }
@@ -110,7 +110,7 @@ export default function CasesList() {
           <div className="flex-1">
             <div className="flex items-center gap-2 flex-wrap mb-2">
               {getSeverityBadge(caseItem.severity)}
-              <Badge className={caseItem.status === 'Under Review' ? 'bg-badge-medium text-white' : 'bg-badge-medium text-white'}>
+              <Badge className={caseItem.status === 'Under Review' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' : 'bg-status-success-soft text-status-success border border-status-success-border'}>
                 {caseItem.status}
               </Badge>
             </div>
@@ -140,11 +140,11 @@ export default function CasesList() {
         <div className="mb-3 md:mb-4">
           <div className="text-xs md:text-sm text-text-body mb-1">Parent Status</div>
           {caseItem.parentAcknowledged ? (
-            <Badge className="bg-brand-dark text-white">
+            <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
               Acknowledged
             </Badge>
           ) : (
-            <Badge className="bg-surface-elevated text-text-label">
+            <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
               Not acknowledged
             </Badge>
           )}
@@ -199,7 +199,7 @@ export default function CasesList() {
           <div className="mb-8">
             <h2 className="text-lg font-medium text-text-heading mb-4 flex items-center gap-2">
               Under Review
-              <Badge className="bg-badge-medium text-white">{underReviewCases.length}</Badge>
+              <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">{underReviewCases.length}</Badge>
             </h2>
             <div className="space-y-4">
               {underReviewCases.map((caseItem) => (
@@ -213,7 +213,7 @@ export default function CasesList() {
           <div className="mb-8">
             <h2 className="text-lg font-medium text-text-heading mb-4 flex items-center gap-2">
               Recently Closed
-              <Badge className="bg-brand-dark text-white">{closedCases.length}</Badge>
+              <Badge className="bg-status-success-soft text-status-success border border-status-success-border">{closedCases.length}</Badge>
             </h2>
             <div className="space-y-4">
               {closedCases.map((caseItem) => (

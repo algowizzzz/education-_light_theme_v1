@@ -79,7 +79,7 @@ export default function ParentIncidentDetail() {
             </div>
             <div className="mb-4">
               <div className="text-sm text-text-body mb-1">Category</div>
-              <Badge variant="outline" className="border-border-strong text-text-label">
+              <Badge className="bg-status-info-soft text-status-info border border-status-info-border">
                 {incident.category}
               </Badge>
             </div>
@@ -148,12 +148,12 @@ export default function ParentIncidentDetail() {
               <div className="flex items-center gap-2 mb-3">
                 <div className="text-sm text-text-body">Status:</div>
                 {acknowledged ? (
-                  <Badge className="bg-brand text-white">
+                  <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
                     <CheckCircle2 className="w-3 h-3 mr-1" />
                     Acknowledged
                   </Badge>
                 ) : (
-                  <Badge variant="outline" className="border-border-strong text-text-label">
+                  <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
                     Not yet acknowledged
                   </Badge>
                 )}

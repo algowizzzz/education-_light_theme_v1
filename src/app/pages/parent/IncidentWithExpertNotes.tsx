@@ -124,11 +124,10 @@ export function IncidentWithExpertNotes() {
                   >
                     <span className="text-sm text-text-heading">{strategy.name}</span>
                     <Badge
-                      variant="outline"
                       className={
                         strategy.effectiveness === 'Effective'
-                          ? 'bg-brand-dark text-white border-brand-dark'
-                          : 'bg-surface-card text-text-label border-border-default'
+                          ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                          : 'bg-status-info-soft text-status-info border border-status-info-border'
                       }
                     >
                       {strategy.effectiveness}

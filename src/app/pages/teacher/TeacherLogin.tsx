@@ -136,7 +136,7 @@ export default function TeacherLogin() {
 
             <Button
               type="submit"
-              className="w-full bg-brand hover:bg-brand-dark text-white rounded-full"
+              className="w-full bg-brand hover:bg-brand-dark text-white shadow-sm rounded-full"
               disabled={failedAttempts >= 3}
             >
               Sign In

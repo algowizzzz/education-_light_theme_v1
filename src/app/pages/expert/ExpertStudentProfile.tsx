@@ -49,7 +49,7 @@ export default function ExpertStudentProfile() {
               <div>
                 <div className="flex items-center gap-3 mb-1">
                   <h1 className="text-2xl text-text-heading">{student.name}</h1>
-                  <Badge className="bg-badge-medium text-white">Active Case</Badge>
+                  <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">Active Case</Badge>
                 </div>
                 <p className="text-text-label">
                   {student.id} • Grade {student.grade} • {student.primaryTeacher}
@@ -151,7 +151,7 @@ export default function ExpertStudentProfile() {
                           </div>
                         </div>
                         <Badge className={
-                          incident.status === 'Closed' ? 'bg-badge-medium text-white' : 'bg-badge-medium text-white'
+                          incident.status === 'Closed' ? 'bg-status-success-soft text-status-success border border-status-success-border' : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                         }>
                           {incident.status}
                         </Badge>

@@ -71,7 +71,7 @@ export default function ParentForgotPassword() {
               </form>
             ) : (
               <div className="text-center py-6">
-                <div className="w-16 h-16 bg-surface-elevated rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-status-success-soft rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="w-8 h-8 text-text-heading" />
                 </div>
                 <p className="text-text-heading mb-2">

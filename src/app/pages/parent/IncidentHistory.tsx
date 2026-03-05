@@ -104,12 +104,12 @@ export default function IncidentHistory() {
 
   const getSeverityBadge = (severity: Incident['severity']) => {
     const styles = {
-      low: 'border-border-strong text-text-body',
-      medium: 'border-brand-dark text-text-heading',
-      high: 'border-brand text-text-heading bg-surface-page'
+      low: 'bg-status-info-soft text-status-info border border-status-info-border',
+      medium: 'bg-status-warning-soft text-status-warning border border-status-warning-border',
+      high: 'bg-status-error-soft text-status-error border border-status-error-border'
     };
     return (
-      <Badge variant="outline" className={styles[severity]}>
+      <Badge className={styles[severity]}>
         {severity.charAt(0).toUpperCase() + severity.slice(1)}
       </Badge>
     );
@@ -121,11 +121,11 @@ export default function IncidentHistory() {
       new: 'Expert Support'
     };
     const styles = {
-      acknowledged: 'border-border-strong text-text-label',
-      new: 'border-brand text-text-heading bg-surface-page'
+      acknowledged: 'bg-status-success-soft text-status-success border border-status-success-border',
+      new: 'bg-status-warning-soft text-status-warning border border-status-warning-border'
     };
     return (
-      <Badge variant="outline" className={styles[status]}>
+      <Badge className={styles[status]}>
         {labels[status]}
       </Badge>
     );
@@ -151,7 +151,7 @@ export default function IncidentHistory() {
             variant={timeRange === 'week' ? 'default' : 'outline'}
             className={
               timeRange === 'week'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -162,7 +162,7 @@ export default function IncidentHistory() {
             variant={timeRange === 'month' ? 'default' : 'outline'}
             className={
               timeRange === 'month'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -173,7 +173,7 @@ export default function IncidentHistory() {
             variant={timeRange === 'quarter' ? 'default' : 'outline'}
             className={
               timeRange === 'quarter'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -184,7 +184,7 @@ export default function IncidentHistory() {
             variant={timeRange === 'year' ? 'default' : 'outline'}
             className={
               timeRange === 'year'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -294,9 +294,9 @@ export default function IncidentHistory() {
                             <span className="mx-2">•</span>
                             <span>{incident.location}</span>
                           </div>
-                          <Link 
+                          <Link
                             to={`/parent/children/${id}/incidents/${incident.id}`}
-                            className="inline-flex items-center gap-1 text-sm text-text-heading hover:text-text-heading underline"
+                            className="inline-flex items-center gap-1 text-sm text-brand-dark hover:text-brand-dark underline"
                           >
                             View Details
                             <ArrowRight className="w-4 h-4" />

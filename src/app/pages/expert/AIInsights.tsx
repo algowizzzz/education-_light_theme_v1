@@ -116,7 +116,7 @@ export default function AIInsights() {
             variant={timeRange === 'week' ? 'default' : 'outline'}
             className={
               timeRange === 'week'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -127,7 +127,7 @@ export default function AIInsights() {
             variant={timeRange === 'month' ? 'default' : 'outline'}
             className={
               timeRange === 'month'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -138,7 +138,7 @@ export default function AIInsights() {
             variant={timeRange === 'quarter' ? 'default' : 'outline'}
             className={
               timeRange === 'quarter'
-                ? 'bg-brand hover:bg-brand-dark text-white'
+                ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
                 : 'border-border-strong text-text-heading hover:bg-surface-page'
             }
           >
@@ -221,12 +221,11 @@ export default function AIInsights() {
                     <h3 className="font-medium text-text-heading mb-1">{alert.student}</h3>
                     <p className="text-sm text-text-label">{alert.prediction}</p>
                   </div>
-                  <Badge 
-                    variant="outline" 
+                  <Badge
                     className={
-                      alert.risk === 'High' 
-                        ? 'border-brand-dark text-text-heading' 
-                        : 'border-border-strong text-text-label'
+                      alert.risk === 'High'
+                        ? 'bg-status-error-soft text-status-error border border-status-error-border'
+                        : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                     }
                   >
                     {alert.risk} Risk
@@ -274,9 +273,14 @@ export default function AIInsights() {
               <div key={pattern.id} className="p-4 bg-surface-page rounded-lg">
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <Badge 
-                      variant="outline" 
-                      className="border-border-strong text-text-label mb-2"
+                    <Badge
+                      className={
+                        pattern.type === 'High Priority'
+                          ? 'bg-status-error-soft text-status-error border border-status-error-border mb-2'
+                          : pattern.type === 'Positive Trend'
+                          ? 'bg-status-success-soft text-status-success border border-status-success-border mb-2'
+                          : 'bg-status-warning-soft text-status-warning border border-status-warning-border mb-2'
+                      }
                     >
                       {pattern.type}
                     </Badge>

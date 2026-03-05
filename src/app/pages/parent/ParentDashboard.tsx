@@ -68,11 +68,11 @@ export default function ParentDashboard() {
   const getSeverityBadge = (severity: string) => {
     switch (severity) {
       case 'High':
-        return <Badge className="bg-brand-dark text-white">{severity}</Badge>;
+        return <Badge className="bg-status-error-soft text-status-error border border-status-error-border">{severity}</Badge>;
       case 'Medium':
-        return <Badge className="bg-badge-medium text-white">{severity}</Badge>;
+        return <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">{severity}</Badge>;
       case 'Low':
-        return <Badge className="bg-surface-elevated text-text-label">{severity}</Badge>;
+        return <Badge className="bg-status-info-soft text-status-info border border-status-info-border">{severity}</Badge>;
       default:
         return <Badge variant="outline">{severity}</Badge>;
     }
@@ -105,7 +105,7 @@ export default function ParentDashboard() {
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 space-y-2 md:space-y-0">
                     <div className="flex items-center gap-2 flex-wrap">
                       {getSeverityBadge(caseItem.severity)}
-                      <Badge className={caseItem.status === 'Under Review' ? 'bg-badge-medium text-white' : 'bg-badge-medium text-white'}>
+                      <Badge className={caseItem.status === 'Under Review' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' : 'bg-status-warning-soft text-status-warning border border-status-warning-border'}>
                         {caseItem.status}
                       </Badge>
                       {!caseItem.parentAcknowledged && (
@@ -130,14 +130,14 @@ export default function ParentDashboard() {
                     <div className="text-sm text-text-body mb-1">Trigger</div>
                     <div className="font-medium text-text-heading">{caseItem.trigger}</div>
                   </div>
-                  
+
                   <p className="text-sm text-text-label line-clamp-2 mb-3">
                     {caseItem.notePreview}
                   </p>
-                  
+
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between pt-3 border-t border-border-light space-y-2 sm:space-y-0">
                     <span className="text-xs text-text-body">Case ID: {caseItem.id}</span>
-                    <Badge className={caseItem.parentAcknowledged ? 'bg-badge-medium text-white' : 'bg-surface-elevated text-text-label'}>
+                    <Badge className={caseItem.parentAcknowledged ? 'bg-status-success-soft text-status-success border border-status-success-border' : 'bg-status-warning-soft text-status-warning border border-status-warning-border'}>
                       {caseItem.parentAcknowledged ? 'Acknowledged' : 'Not yet acknowledged'}
                     </Badge>
                   </div>
@@ -154,7 +154,7 @@ export default function ParentDashboard() {
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3 space-y-2 md:space-y-0">
                     <div className="flex items-center gap-2 flex-wrap">
                       {getSeverityBadge(caseItem.severity)}
-                      <Badge className={caseItem.status === 'Under Review' ? 'bg-badge-medium text-white' : 'bg-badge-medium text-white'}>
+                      <Badge className={caseItem.status === 'Under Review' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' : 'bg-status-success-soft text-status-success border border-status-success-border'}>
                         {caseItem.status}
                       </Badge>
                       {!caseItem.parentAcknowledged && (
@@ -186,7 +186,7 @@ export default function ParentDashboard() {
                   
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between pt-3 border-t border-border-light space-y-2 sm:space-y-0">
                     <span className="text-xs text-text-body">Case ID: {caseItem.id}</span>
-                    <Badge className={caseItem.parentAcknowledged ? 'bg-badge-medium text-white' : 'bg-surface-elevated text-text-label'}>
+                    <Badge className={caseItem.parentAcknowledged ? 'bg-status-success-soft text-status-success border border-status-success-border' : 'bg-status-warning-soft text-status-warning border border-status-warning-border'}>
                       {caseItem.parentAcknowledged ? 'Acknowledged' : 'Not yet acknowledged'}
                     </Badge>
                   </div>
@@ -196,7 +196,7 @@ export default function ParentDashboard() {
 
             <Button
               variant="outline"
-              className="w-full mt-3 border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+              className="w-full mt-3 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
               onClick={() => navigate(`/parent/children/${marcusChild.id}/cases`)}
             >
               View All Cases

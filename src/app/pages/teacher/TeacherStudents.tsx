@@ -138,12 +138,12 @@ export default function TeacherStudents() {
               <div className="hidden md:block border border-border-light rounded-lg overflow-hidden">
                 <Table>
                   <TableHeader>
-                    <TableRow className="bg-surface-page">
-                      <TableHead className="text-text-heading font-semibold">Name</TableHead>
-                      <TableHead className="text-text-heading font-semibold">Student ID</TableHead>
-                      <TableHead className="text-text-heading font-semibold">Grade</TableHead>
-                      <TableHead className="text-text-heading font-semibold">Class</TableHead>
-                      <TableHead className="text-text-heading font-semibold text-right">Action</TableHead>
+                    <TableRow className="bg-table-header-bg">
+                      <TableHead className="text-table-header-text font-semibold">Name</TableHead>
+                      <TableHead className="text-table-header-text font-semibold">Student ID</TableHead>
+                      <TableHead className="text-table-header-text font-semibold">Grade</TableHead>
+                      <TableHead className="text-table-header-text font-semibold">Class</TableHead>
+                      <TableHead className="text-table-header-text font-semibold text-right">Action</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>

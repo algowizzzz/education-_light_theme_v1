@@ -431,6 +431,7 @@ export function EditStudentProfile() {
               type="button"
               variant="outline"
               onClick={() => setShowAddTriggerModal(false)}
+              className="border-border-strong text-text-heading"
             >
               Close
             </Button>
@@ -495,7 +496,7 @@ export function EditStudentProfile() {
                   }
                 }}
                 variant="outline"
-                className="w-full"
+                className="w-full border-border-strong text-text-heading"
               >
                 Add to "Strategies to Avoid" List
               </Button>
@@ -506,6 +507,7 @@ export function EditStudentProfile() {
               type="button"
               variant="outline"
               onClick={() => setShowAddStrategyModal(false)}
+              className="border-border-strong text-text-heading"
             >
               Close
             </Button>

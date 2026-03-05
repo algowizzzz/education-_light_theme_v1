@@ -306,7 +306,7 @@ export default function NewIncidentStep2AI() {
                 <div className={`flex gap-3 max-w-[80%] ${message.sender === 'teacher' ? 'flex-row-reverse' : 'flex-row'}`}>
                   {/* Avatar */}
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    message.sender === 'ai' ? 'bg-brand' : 'bg-surface-elevated'
+                    message.sender === 'ai' ? 'bg-brand' : 'bg-status-info-soft'
                   }`}>
                     {message.sender === 'ai' ? (
                       <Lightbulb className="w-4 h-4 text-white" />
@@ -318,9 +318,9 @@ export default function NewIncidentStep2AI() {
                   {/* Message Content */}
                   <div>
                     <div className={`rounded-lg p-3 ${
-                      message.sender === 'ai' 
-                        ? 'bg-surface-page text-text-heading' 
-                        : 'bg-badge-high text-white'
+                      message.sender === 'ai'
+                        ? 'bg-surface-page text-text-heading'
+                        : 'bg-brand text-white'
                     }`}>
                       <p className="text-sm whitespace-pre-wrap">{message.text}</p>
                     </div>
@@ -395,7 +395,7 @@ export default function NewIncidentStep2AI() {
               <Button
                 onClick={handleSend}
                 disabled={!inputValue.trim() || isTyping}
-                className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+                className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
               >
                 <Send className="w-4 h-4" />
               </Button>
@@ -419,7 +419,7 @@ export default function NewIncidentStep2AI() {
           {(stage === 'resolved' || messages.length > 5) && (
             <Button
               onClick={handleContinueToDetails}
-              className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
             >
               Continue to Incident Details →
             </Button>

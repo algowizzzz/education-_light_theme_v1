@@ -104,13 +104,12 @@ export default function CaseManagement() {
                   </p>
                 </div>
                 <Badge
-                  variant="outline"
                   className={
                     caseItem.caseStatus === 'Active'
-                      ? 'border-brand text-text-heading'
+                      ? 'bg-status-success-soft text-status-success border border-status-success-border'
                       : caseItem.caseStatus === 'Monitoring'
-                      ? 'border-border-strong text-text-body'
-                      : 'border-border-strong text-text-muted'
+                      ? 'bg-status-warning-soft text-status-warning border border-status-warning-border'
+                      : 'bg-status-info-soft text-status-info border border-status-info-border'
                   }
                 >
                   {caseItem.caseStatus}
@@ -143,7 +142,7 @@ export default function CaseManagement() {
                         setSelectedStudent(caseItem.id);
                         setShowMonitoringModal(true);
                       }}
-                      className="border-border-default text-text-heading hover:bg-surface-page"
+                      className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
                     >
                       <Flag className="w-4 h-4 mr-2" />
                       Set Monitoring
@@ -154,7 +153,7 @@ export default function CaseManagement() {
                         setSelectedStudent(caseItem.id);
                         setShowCloseModal(true);
                       }}
-                      className="border-border-default text-text-heading hover:bg-surface-page"
+                      className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
                     >
                       <Archive className="w-4 h-4 mr-2" />
                       Close Case
@@ -211,7 +210,7 @@ export default function CaseManagement() {
             <Button
               variant="outline"
               onClick={() => setShowMonitoringModal(false)}
-              className="border-border-default text-text-heading hover:bg-surface-page"
+              className="border-border-strong text-text-heading"
             >
               Cancel
             </Button>
@@ -252,7 +251,7 @@ export default function CaseManagement() {
             <Button
               variant="outline"
               onClick={() => setShowCloseModal(false)}
-              className="border-border-default text-text-heading hover:bg-surface-page"
+              className="border-border-strong text-text-heading"
             >
               Cancel
             </Button>

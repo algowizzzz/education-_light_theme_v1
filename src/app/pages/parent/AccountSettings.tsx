@@ -131,7 +131,7 @@ export default function ParentAccountSettings() {
                   />
                 </div>
               </div>
-              <Button type="submit" className="mt-6 bg-brand hover:bg-brand-dark">
+              <Button type="submit" className="mt-6 bg-brand hover:bg-brand-dark text-white shadow-sm">
                 Save Changes
               </Button>
             </form>
@@ -191,7 +191,7 @@ export default function ParentAccountSettings() {
               </div>
               <Button
                 type="submit"
-                className="mt-6 bg-brand hover:bg-brand-dark"
+                className="mt-6 bg-brand hover:bg-brand-dark text-white shadow-sm"
                 disabled={
                   !passwordData.currentPassword ||
                   !passwordData.newPassword ||

@@ -140,11 +140,11 @@ export default function AIAnalysis() {
               <p className="text-text-body">{studentData.name} - {studentData.grade} Grade</p>
             </div>
             <div className="flex gap-2">
-              <Button variant="outline">
+              <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                 <RefreshCw className="h-4 w-4 mr-2" />
                 Request Deeper Analysis
               </Button>
-              <Button variant="outline">
+              <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                 <Download className="h-4 w-4 mr-2" />
                 Export Report
               </Button>
@@ -228,7 +228,7 @@ export default function AIAnalysis() {
                           <TrendingDown className="h-4 w-4 text-text-body" />
                         )}
                         {item.successRate >= 80 && (
-                          <Badge variant="secondary" className="bg-brand-dark text-white text-xs">
+                          <Badge variant="secondary" className="bg-status-success-soft text-status-success border border-status-success-border text-xs">
                             Highly Effective
                           </Badge>
                         )}
@@ -260,7 +260,7 @@ export default function AIAnalysis() {
               <Button
                 onClick={handleApplyRecommendations}
                 disabled={isApplying || applied}
-                className="bg-brand hover:bg-brand-dark"
+                className="bg-brand hover:bg-brand-dark text-white shadow-sm"
               >
                 {isApplying ? 'Applying...' : applied ? 'Applied' : 'Apply Recommendations to Profile'}
               </Button>
@@ -280,10 +280,10 @@ export default function AIAnalysis() {
                         variant="secondary"
                         className={`text-xs ${
                           rec.priority === 'high'
-                            ? 'bg-badge-medium text-white'
+                            ? 'bg-status-error-soft text-status-error border border-status-error-border'
                             : rec.priority === 'medium'
-                            ? 'bg-badge-medium text-white'
-                            : 'bg-border-default text-text-heading'
+                            ? 'bg-status-warning-soft text-status-warning border border-status-warning-border'
+                            : 'bg-status-info-soft text-status-info border border-status-info-border'
                         }`}
                       >
                         {rec.priority.toUpperCase()}

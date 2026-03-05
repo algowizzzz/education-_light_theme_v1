@@ -94,7 +94,7 @@ export default function NewIncidentStep3Details() {
             {/* Date */}
             <div>
               <Label htmlFor="date" className="text-text-heading">
-                Date <span className="text-red-500">*</span>
+                Date <span className="text-status-error">*</span>
               </Label>
               <Input
                 id="date"
@@ -108,7 +108,7 @@ export default function NewIncidentStep3Details() {
             {/* Time */}
             <div>
               <Label htmlFor="time" className="text-text-heading">
-                Time <span className="text-red-500">*</span>
+                Time <span className="text-status-error">*</span>
               </Label>
               <Input
                 id="time"
@@ -123,7 +123,7 @@ export default function NewIncidentStep3Details() {
           {/* Class/Period */}
           <div>
             <Label htmlFor="class" className="text-text-heading">
-              Class/Period <span className="text-red-500">*</span>
+              Class/Period <span className="text-status-error">*</span>
             </Label>
             <Select value={classPeriod} onValueChange={setClassPeriod}>
               <SelectTrigger className="mt-1 border-border-default">
@@ -146,7 +146,7 @@ export default function NewIncidentStep3Details() {
           {/* Location */}
           <div>
             <Label htmlFor="location" className="text-text-heading">
-              Location <span className="text-red-500">*</span>
+              Location <span className="text-status-error">*</span>
             </Label>
             <Select value={location} onValueChange={setLocation}>
               <SelectTrigger className="mt-1 border-border-default">
@@ -169,7 +169,7 @@ export default function NewIncidentStep3Details() {
           {/* Behavior Category */}
           <div>
             <Label htmlFor="category" className="text-text-heading">
-              Behavior Category <span className="text-red-500">*</span>
+              Behavior Category <span className="text-status-error">*</span>
             </Label>
             <Select value={category} onValueChange={setCategory}>
               <SelectTrigger className="mt-1 border-border-default">
@@ -190,7 +190,7 @@ export default function NewIncidentStep3Details() {
           {/* Severity */}
           <div>
             <Label className="text-text-heading mb-3 block">
-              Severity Level <span className="text-red-500">*</span>
+              Severity Level <span className="text-status-error">*</span>
             </Label>
             <RadioGroup value={severity} onValueChange={setSeverity}>
               <div className="space-y-3">
@@ -231,7 +231,7 @@ export default function NewIncidentStep3Details() {
           </Button>
           <Button
             onClick={handleNext}
-            className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
           >
             Next →
           </Button>

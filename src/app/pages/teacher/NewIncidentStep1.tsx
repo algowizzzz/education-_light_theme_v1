@@ -143,7 +143,7 @@ export default function NewIncidentStep1() {
           <Button
             onClick={handleNext}
             disabled={!selectedStudent}
-            className="bg-brand hover:bg-brand-dark text-white rounded-lg disabled:opacity-50"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg disabled:opacity-50"
           >
             Next →
           </Button>

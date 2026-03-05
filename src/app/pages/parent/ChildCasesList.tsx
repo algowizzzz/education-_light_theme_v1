@@ -50,11 +50,11 @@ export default function ChildCasesList() {
   const getSeverityBadge = (severity: string) => {
     switch (severity) {
       case 'High':
-        return <Badge className="bg-brand-dark text-white">{severity}</Badge>;
+        return <Badge className="bg-status-error-soft text-status-error border border-status-error-border">{severity}</Badge>;
       case 'Medium':
-        return <Badge className="bg-badge-medium text-white">{severity}</Badge>;
+        return <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">{severity}</Badge>;
       case 'Low':
-        return <Badge className="bg-surface-elevated text-text-label">{severity}</Badge>;
+        return <Badge className="bg-status-info-soft text-status-info border border-status-info-border">{severity}</Badge>;
       default:
         return <Badge variant="outline">{severity}</Badge>;
     }
@@ -67,7 +67,7 @@ export default function ChildCasesList() {
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
               {getSeverityBadge(caseItem.severity)}
-              <Badge className={caseItem.status === 'Under Review' ? 'bg-badge-medium text-white' : 'bg-badge-medium text-white'}>
+              <Badge className={caseItem.status === 'Under Review' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' : 'bg-status-success-soft text-status-success border border-status-success-border'}>
                 {caseItem.status}
               </Badge>
             </div>
@@ -107,11 +107,11 @@ export default function ChildCasesList() {
         <div className="mb-4">
           <div className="text-sm text-text-body mb-1">Acknowledgment Status</div>
           {caseItem.parentAcknowledged ? (
-            <Badge className="bg-brand-dark text-white">
+            <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
               Acknowledged
             </Badge>
           ) : (
-            <Badge className="bg-surface-elevated text-text-label">
+            <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
               Not yet acknowledged
             </Badge>
           )}
@@ -162,11 +162,11 @@ export default function ChildCasesList() {
           <Card className="flex-1 border-border-default p-4">
             <div className="flex items-center gap-6 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-badge-medium"></div>
+                <div className="w-3 h-3 rounded-full bg-status-warning"></div>
                 <span className="text-text-label">Under Review</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-brand-dark"></div>
+                <div className="w-3 h-3 rounded-full bg-status-success"></div>
                 <span className="text-text-label">Closed</span>
               </div>
             </div>

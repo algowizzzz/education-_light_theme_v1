@@ -14,8 +14,8 @@ export default function IncidentConfirmation() {
     <TeacherLayout>
       <div className="max-w-4xl mx-auto space-y-6">
         <Card className="p-8 border border-border-default bg-surface-card text-center space-y-6">
-          <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center mx-auto">
-            <CheckCircle2 className="w-8 h-8 text-text-heading" />
+          <div className="w-16 h-16 rounded-full bg-status-success-soft flex items-center justify-center mx-auto">
+            <CheckCircle2 className="w-8 h-8 text-status-success" />
           </div>
 
           <div>
@@ -91,7 +91,7 @@ export default function IncidentConfirmation() {
             </Button>
             <Button
               onClick={() => navigate('/teacher/dashboard')}
-              className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
             >
               Return to Dashboard
             </Button>

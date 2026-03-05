@@ -51,7 +51,7 @@ export default function StudentProfile() {
             <div className="flex gap-2">
               <Button
                 onClick={() => navigate(`/teacher/incidents/new?student=${id}`)}
-                className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+                className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
               >
                 Log Incident
               </Button>
@@ -64,25 +64,25 @@ export default function StudentProfile() {
           <TabsList className="bg-surface-card border border-border-default p-1">
             <TabsTrigger
               value="overview"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Overview
             </TabsTrigger>
             <TabsTrigger
               value="triggers"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Triggers
             </TabsTrigger>
             <TabsTrigger
               value="strategies"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Strategies
             </TabsTrigger>
             <TabsTrigger
               value="history"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               History
             </TabsTrigger>
@@ -149,13 +149,10 @@ export default function StudentProfile() {
                           {incident.date} • {incident.time}
                         </p>
                         <Badge
-                          variant={
-                            incident.status === 'Closed' ? 'outline' : 'secondary'
-                          }
                           className={
                             incident.status === 'Closed'
-                              ? 'border-border-strong text-text-label'
-                              : 'bg-surface-elevated text-text-label'
+                              ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                              : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                           }
                         >
                           {incident.status}
@@ -253,13 +250,10 @@ export default function StudentProfile() {
                           {incident.date} • {incident.time}
                         </p>
                         <Badge
-                          variant={
-                            incident.status === 'Closed' ? 'outline' : 'secondary'
-                          }
                           className={
                             incident.status === 'Closed'
-                              ? 'border-border-strong text-text-label'
-                              : 'bg-surface-elevated text-text-label'
+                              ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                              : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                           }
                         >
                           {incident.status}

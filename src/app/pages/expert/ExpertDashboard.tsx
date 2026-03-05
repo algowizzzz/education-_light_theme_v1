@@ -134,8 +134,8 @@ export default function ExpertDashboard() {
                       variant={caseItem.priority === 'High' ? 'default' : 'outline'}
                       className={
                         caseItem.priority === 'High'
-                          ? 'bg-badge-high text-white'
-                          : 'border-border-strong text-text-label'
+                          ? 'bg-status-error-soft text-status-error border border-status-error-border'
+                          : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                       }
                     >
                       {caseItem.priority} Priority
@@ -164,7 +164,7 @@ export default function ExpertDashboard() {
                 </p>
 
                 <Button
-                  className="w-full bg-brand hover:bg-brand-dark text-white rounded-lg"
+                  className="w-full bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
                   onClick={(e) => {
                     e.stopPropagation();
                     navigate(`/expert/cases/${caseItem.id}`);

@@ -58,10 +58,10 @@ export default function EscalationsList() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Pending Review': return 'bg-surface-elevated text-text-label';
-      case 'Under Review': return 'bg-badge-medium text-white';
-      case 'Resolved': return 'bg-badge-medium text-white';
-      default: return 'bg-surface-page text-text-label';
+      case 'Pending Review': return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
+      case 'Under Review': return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
+      case 'Resolved': return 'bg-status-success-soft text-status-success border border-status-success-border';
+      default: return 'bg-status-info-soft text-status-info border border-status-info-border';
     }
   };
 
@@ -90,11 +90,11 @@ export default function EscalationsList() {
           <Card className="flex-1 border-border-default p-4">
             <div className="flex items-center gap-6 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-badge-medium"></div>
+                <div className="w-3 h-3 rounded-full bg-status-warning"></div>
                 <span className="text-text-label">Under Review</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-brand-dark"></div>
+                <div className="w-3 h-3 rounded-full bg-status-success"></div>
                 <span className="text-text-label">Resolved</span>
               </div>
             </div>
@@ -159,11 +159,11 @@ export default function EscalationsList() {
                     </td>
                     <td className="p-4">
                       {escalation.parentAcknowledged ? (
-                        <Badge className="bg-brand-dark text-white">
+                        <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
                           Acknowledged
                         </Badge>
                       ) : (
-                        <Badge className="bg-surface-elevated text-text-label">
+                        <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
                           Not yet acknowledged
                         </Badge>
                       )}

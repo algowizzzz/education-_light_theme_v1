@@ -190,7 +190,7 @@ export default function Resources() {
               <Card key={resource.id} className="border-border-default hover:border-border-strong transition-colors">
                 <CardHeader>
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-surface-page rounded border border-border-light">
+                    <div className="p-2 bg-status-info-soft rounded border border-border-light">
                       {getTypeIcon(resource.type)}
                     </div>
                     <div className="flex-1">

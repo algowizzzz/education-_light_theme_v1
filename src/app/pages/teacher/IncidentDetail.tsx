@@ -121,7 +121,7 @@ export default function IncidentDetail() {
             <CardTitle className="text-lg text-text-heading">Parent Acknowledgment Status</CardTitle>
           </CardHeader>
           <CardContent>
-            <Badge className="bg-brand-dark text-white">
+            <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
               Acknowledged
             </Badge>
             <p className="text-sm text-text-body mt-2">
@@ -151,9 +151,9 @@ export default function IncidentDetail() {
               <div>
                 <div className="text-sm text-text-body mb-1">Severity</div>
                 <Badge className={
-                  incidentDetails.severity === 'High' ? 'bg-badge-high text-white' :
-                  incidentDetails.severity === 'Medium' ? 'bg-badge-medium text-white' :
-                  'bg-surface-elevated text-text-label'
+                  incidentDetails.severity === 'High' ? 'bg-status-error-soft text-status-error border border-status-error-border' :
+                  incidentDetails.severity === 'Medium' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' :
+                  'bg-status-info-soft text-status-info border border-status-info-border'
                 }>
                   {incidentDetails.severity}
                 </Badge>

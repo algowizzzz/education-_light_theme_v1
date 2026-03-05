@@ -120,7 +120,7 @@ export default function NewIncidentStep3() {
         {/* Triggers */}
         <Card className="p-6 border border-border-default bg-surface-card space-y-4">
           <h3 className="text-lg font-semibold text-text-heading">
-            What triggered the behavior? <span className="text-red-500">*</span>
+            What triggered the behavior? <span className="text-status-error">*</span>
           </h3>
 
           {/* Known Triggers */}
@@ -210,7 +210,7 @@ export default function NewIncidentStep3() {
         {/* Strategies */}
         <Card className="p-6 border border-border-default bg-surface-card space-y-4">
           <h3 className="text-lg font-semibold text-text-heading">
-            What strategies were attempted? <span className="text-red-500">*</span>
+            What strategies were attempted? <span className="text-status-error">*</span>
           </h3>
 
           {/* Recommended Strategies */}
@@ -316,7 +316,7 @@ export default function NewIncidentStep3() {
             </Button>
             <Button
               onClick={handleNext}
-              className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
             >
               Next →
             </Button>

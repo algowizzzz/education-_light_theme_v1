@@ -66,8 +66,8 @@ export function NoIncidentsState() {
 
         <Card className="border-border-default p-12">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-surface-page mb-4">
-              <CheckCircle2 className="w-8 h-8 text-text-label" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-status-success-soft mb-4">
+              <CheckCircle2 className="w-8 h-8 text-status-success" />
             </div>
             <h2 className="text-xl text-text-heading font-semibold mb-2">
               No Incidents Recorded

@@ -55,7 +55,7 @@ export default function ChildProfileNew() {
               <Button
                 onClick={() => navigate(`/parent/children/${id}/cases`)}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 View Cases
               </Button>
@@ -68,19 +68,19 @@ export default function ChildProfileNew() {
           <TabsList className="bg-surface-card border border-border-default p-1">
             <TabsTrigger
               value="overview"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Overview
             </TabsTrigger>
             <TabsTrigger
               value="triggers"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Triggers
             </TabsTrigger>
             <TabsTrigger
               value="strategies"
-              className="data-[state=active]:bg-surface-elevated data-[state=active]:text-text-heading"
+              className="data-[state=active]:bg-brand data-[state=active]:text-white"
             >
               Strategies
             </TabsTrigger>
@@ -98,7 +98,7 @@ export default function ChildProfileNew() {
                   <ul className="space-y-2">
                     {profile.triggers.map((trigger, index) => (
                       <li key={index} className="flex items-center space-x-2">
-                        <span className="w-2 h-2 rounded-full bg-badge-medium"></span>
+                        <span className="w-2 h-2 rounded-full bg-status-warning"></span>
                         <span className="text-text-label">{trigger.name}</span>
                       </li>
                     ))}
@@ -140,7 +140,7 @@ export default function ChildProfileNew() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-border-strong text-text-heading hover:bg-surface-page"
+                    className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
                   >
                     View All
                   </Button>
@@ -159,13 +159,10 @@ export default function ChildProfileNew() {
                           {incident.date} • {incident.time}
                         </p>
                         <Badge
-                          variant={
-                            incident.status === 'Closed' ? 'outline' : 'secondary'
-                          }
                           className={
                             incident.status === 'Closed'
-                              ? 'border-border-strong text-text-label'
-                              : 'bg-surface-elevated text-text-label'
+                              ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                              : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                           }
                         >
                           {incident.status}

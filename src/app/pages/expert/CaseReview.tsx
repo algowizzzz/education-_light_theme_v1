@@ -430,7 +430,7 @@ This incident represents the third math-related escalation this week, showing a 
                 </div>
               </div>
               <Link to={`/expert/students/${caseData.student.id}`}>
-                <Button variant="outline" className="border-border-strong text-text-heading hover:bg-surface-page">
+                <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                   View Full Profile
                 </Button>
               </Link>
@@ -465,7 +465,7 @@ This incident represents the third math-related escalation this week, showing a 
             <CardTitle className="text-lg text-text-heading">Parent Acknowledgment Status</CardTitle>
           </CardHeader>
           <CardContent>
-            <Badge className="bg-brand-dark text-white">
+            <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
               Acknowledged
             </Badge>
             <p className="text-sm text-text-body mt-2">
@@ -495,9 +495,9 @@ This incident represents the third math-related escalation this week, showing a 
               <div>
                 <div className="text-sm text-text-body mb-1">Severity</div>
                 <Badge className={
-                  incidentDetails.severity === 'High' ? 'bg-badge-high text-white' :
-                  incidentDetails.severity === 'Medium' ? 'bg-badge-medium text-white' :
-                  'bg-surface-elevated text-text-label'
+                  incidentDetails.severity === 'High' ? 'bg-status-error-soft text-status-error border border-status-error-border' :
+                  incidentDetails.severity === 'Medium' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' :
+                  'bg-status-info-soft text-status-info border border-status-info-border'
                 }>
                   {incidentDetails.severity}
                 </Badge>
@@ -599,7 +599,7 @@ This incident represents the third math-related escalation this week, showing a 
                   onClick={handleCopyRecommendations}
                   variant="ghost"
                   size="sm"
-                  className="absolute top-2 right-2 text-text-body hover:text-text-heading hover:bg-surface-elevated"
+                  className="absolute top-2 right-2 text-text-body hover:text-text-heading hover:bg-status-info-soft"
                 >
                   {isCopied ? (
                     <>
@@ -664,7 +664,7 @@ This incident represents the third math-related escalation this week, showing a 
             {notes.length > 0 && (
               <div className="mb-4 space-y-3">
                 {notes.map((note, index) => (
-                  <div key={index} className={`p-4 rounded-lg ${note.role === 'teacher' ? 'bg-surface-page' : 'bg-surface-elevated'}`}>
+                  <div key={index} className={`p-4 rounded-lg ${note.role === 'teacher' ? 'bg-surface-page' : 'bg-status-info-soft'}`}>
                     <p className="text-text-heading mb-2">{note.text}</p>
                     <div className="flex items-center gap-2 text-xs text-text-body">
                       <span className="font-medium">{note.author}</span>

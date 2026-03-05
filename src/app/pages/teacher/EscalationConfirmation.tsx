@@ -17,8 +17,8 @@ export default function EscalationConfirmation() {
     <TeacherLayout>
       <div className="p-8 max-w-3xl mx-auto">
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center mb-4">
-            <CheckCircle2 className="w-10 h-10 text-text-heading" />
+          <div className="w-16 h-16 rounded-full bg-status-success-soft flex items-center justify-center mb-4">
+            <CheckCircle2 className="w-10 h-10 text-status-success" />
           </div>
           <h1 className="text-2xl text-text-heading mb-2">Escalation Submitted</h1>
           <p className="text-text-label">{expert?.name} has been notified and will review this case</p>

@@ -189,7 +189,7 @@ export default function ChildCaseDetail() {
           <Card className="border-border-default">
             <CardContent className="pt-6">
               <div className="text-sm text-text-body mb-1">Status</div>
-              <Badge className="bg-badge-medium text-white">
+              <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
                 {caseData.status}
               </Badge>
             </CardContent>
@@ -201,7 +201,7 @@ export default function ChildCaseDetail() {
             <CardTitle className="text-lg text-text-heading">Linked Incident</CardTitle>
           </CardHeader>
           <CardContent>
-            <Link 
+            <Link
               to={`/parent/children/${id}/incidents/${caseData.linkedIncident}`}
               className="text-text-heading hover:underline font-medium"
             >
@@ -231,9 +231,9 @@ export default function ChildCaseDetail() {
               <div>
                 <div className="text-sm text-text-body mb-1">Severity</div>
                 <Badge className={
-                  incidentDetails.severity === 'High' ? 'bg-badge-high text-white' :
-                  incidentDetails.severity === 'Medium' ? 'bg-badge-medium text-white' :
-                  'bg-surface-elevated text-text-label'
+                  incidentDetails.severity === 'High' ? 'bg-status-error-soft text-status-error border border-status-error-border' :
+                  incidentDetails.severity === 'Medium' ? 'bg-status-warning-soft text-status-warning border border-status-warning-border' :
+                  'bg-status-info-soft text-status-info border border-status-info-border'
                 }>
                   {incidentDetails.severity}
                 </Badge>
@@ -312,16 +312,16 @@ export default function ChildCaseDetail() {
             {messages.length > 0 && (
               <div className="mb-4 space-y-3">
                 {messages.map((msg, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className={`p-4 rounded-lg ${
-                      msg.sender === 'parent' ? 'bg-surface-elevated' : 
-                      msg.sender === 'teacher' ? 'bg-surface-page' : 
-                      'bg-surface-elevated'
+                      msg.sender === 'parent' ? 'bg-brand text-white' :
+                      msg.sender === 'teacher' ? 'bg-surface-page' :
+                      'bg-status-info-soft'
                     }`}
                   >
-                    <p className="text-text-heading mb-2">{msg.message}</p>
-                    <div className="flex items-center gap-2 text-xs text-text-body">
+                    <p className={`mb-2 ${msg.sender === 'parent' ? 'text-white' : 'text-text-heading'}`}>{msg.message}</p>
+                    <div className={`flex items-center gap-2 text-xs ${msg.sender === 'parent' ? 'text-white/70' : 'text-text-body'}`}>
                       <span className="font-medium">{msg.senderName}</span>
                       <span>•</span>
                       <span className="capitalize">{msg.sender}</span>

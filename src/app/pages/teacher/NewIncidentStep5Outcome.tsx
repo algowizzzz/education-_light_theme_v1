@@ -122,7 +122,7 @@ export default function NewIncidentStep5Outcome() {
           {/* Outcome */}
           <div>
             <Label className="text-text-heading mb-3 block">
-              Outcome <span className="text-red-500">*</span>
+              Outcome <span className="text-status-error">*</span>
             </Label>
             <RadioGroup value={outcome} onValueChange={setOutcome}>
               <div className="space-y-2">
@@ -160,7 +160,7 @@ export default function NewIncidentStep5Outcome() {
           </Button>
           <Button
             onClick={handleSubmit}
-            className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
           >
             Submit Incident
           </Button>

@@ -42,7 +42,7 @@ export default function TeacherDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Button
             onClick={() => navigate('/teacher/incidents/new')}
-            className="bg-brand hover:bg-brand-dark text-white h-12 rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm h-12 rounded-lg"
           >
             <Plus className="w-5 h-5 mr-2" />Log New Incident
           </Button>
@@ -120,11 +120,10 @@ export default function TeacherDashboard() {
                       {incident.student}
                     </span>
                     <Badge
-                      variant={incident.status === 'Resolved' ? 'outline' : 'secondary'}
                       className={
                         incident.status === 'Resolved'
-                          ? 'border-border-strong text-text-label'
-                          : 'bg-surface-elevated text-text-label'
+                          ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                          : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                       }
                     >
                       {incident.status}
@@ -150,11 +149,10 @@ export default function TeacherDashboard() {
                     </div>
                   </div>
                   <Badge
-                    variant={incident.status === 'Resolved' ? 'outline' : 'secondary'}
                     className={
                       incident.status === 'Resolved'
-                        ? 'border-border-strong text-text-label'
-                        : 'bg-surface-elevated text-text-label'
+                        ? 'bg-status-success-soft text-status-success border border-status-success-border'
+                        : 'bg-status-warning-soft text-status-warning border border-status-warning-border'
                     }
                   >
                     {incident.status}

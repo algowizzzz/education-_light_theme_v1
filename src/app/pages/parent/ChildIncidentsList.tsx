@@ -67,26 +67,26 @@ export default function ChildIncidentsList() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Resolved':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-success-soft text-status-success border border-status-success-border';
       case 'Escalated':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-error-soft text-status-error border border-status-error-border';
       case 'Under Review':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
       default:
-        return 'bg-surface-elevated text-text-label';
+        return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
     }
   };
 
   const getSeverityColor = (severity: string) => {
     switch (severity) {
       case 'High':
-        return 'bg-badge-high text-white';
+        return 'bg-status-error-soft text-status-error border border-status-error-border';
       case 'Medium':
-        return 'bg-badge-medium text-white';
+        return 'bg-status-warning-soft text-status-warning border border-status-warning-border';
       case 'Low':
-        return 'bg-surface-elevated text-text-label';
+        return 'bg-status-info-soft text-status-info border border-status-info-border';
       default:
-        return 'bg-surface-page text-text-label';
+        return 'bg-status-info-soft text-status-info border border-status-info-border';
     }
   };
 
@@ -234,11 +234,11 @@ export default function ChildIncidentsList() {
                     </td>
                     <td className="p-4">
                       {incident.parentAcknowledged ? (
-                        <Badge className="bg-brand-dark text-white">
+                        <Badge className="bg-status-success-soft text-status-success border border-status-success-border">
                           Acknowledged
                         </Badge>
                       ) : (
-                        <Badge className="bg-surface-elevated text-text-label">
+                        <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">
                           Pending
                         </Badge>
                       )}

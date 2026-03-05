@@ -252,7 +252,7 @@ export default function ParentManagement() {
               </Button>
               <Button
                 onClick={() => navigate('/admin/parents/new')}
-                className="bg-brand hover:bg-brand-dark text-white"
+                className="bg-brand hover:bg-brand-dark text-white shadow-sm"
               >
                 <Plus className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Add Parent</span>

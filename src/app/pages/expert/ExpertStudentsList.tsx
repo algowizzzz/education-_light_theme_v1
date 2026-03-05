@@ -138,7 +138,7 @@ export default function ExpertStudentsList() {
                     </td>
                     <td className="p-4">
                       {student.hasActiveCase ? (
-                        <Badge className="bg-badge-medium text-white">Active Case</Badge>
+                        <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border">Active Case</Badge>
                       ) : (
                         <span className="text-sm text-text-body">—</span>
                       )}

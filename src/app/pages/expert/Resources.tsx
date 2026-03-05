@@ -248,7 +248,7 @@ export default function Resources() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-start gap-3 flex-1">
-                      <div className="p-2 bg-surface-page rounded border border-border-light">
+                      <div className="p-2 bg-status-info-soft rounded border border-border-light">
                         {getTypeIcon(resource.type)}
                       </div>
                       <div className="flex-1">

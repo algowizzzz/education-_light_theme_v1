@@ -85,7 +85,7 @@ export default function CaseAssessment() {
               </div>
               <div>
                 <p className="text-text-body">Priority</p>
-                <span className="inline-flex items-center px-2 py-1 rounded text-xs bg-brand-dark text-white">
+                <span className="inline-flex items-center px-2 py-1 rounded text-xs bg-status-error-soft text-status-error border border-status-error-border">
                   {caseData.priority}
                 </span>
               </div>
@@ -166,7 +166,7 @@ export default function CaseAssessment() {
               <Button
                 variant="outline"
                 onClick={() => setShowPreviewModal(true)}
-                className="w-full mt-4"
+                className="w-full mt-4 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 <FileText className="h-4 w-4 mr-2" />
                 Preview Profile Changes
@@ -271,14 +271,14 @@ export default function CaseAssessment() {
           <Button
             variant="outline"
             onClick={handleSaveDraft}
-            className="flex-1"
+            className="flex-1 border-border-strong text-text-heading"
           >
             Save Draft
           </Button>
           <Button
             onClick={handleSubmit}
             disabled={assessmentNotes.length < 50}
-            className="flex-1 bg-brand hover:bg-brand-dark"
+            className="flex-1 bg-brand hover:bg-brand-dark text-white shadow-sm"
           >
             Submit Assessment
           </Button>
@@ -348,7 +348,7 @@ export default function CaseAssessment() {
               )}
 
               <div className="flex justify-end">
-                <Button onClick={() => setShowPreviewModal(false)} variant="outline">
+                <Button onClick={() => setShowPreviewModal(false)} variant="outline" className="border-border-strong text-text-heading">
                   Close Preview
                 </Button>
               </div>

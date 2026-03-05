@@ -98,7 +98,7 @@ export default function ChildProfile() {
             <div className="flex items-center justify-between">
               <CardTitle className="text-lg text-text-heading">Recent Incidents</CardTitle>
               <Link to={`/parent/children/${id}/incidents`}>
-                <Button variant="outline" size="sm" className="border-border-strong text-text-heading hover:bg-surface-page">
+                <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                   View All
                 </Button>
               </Link>
@@ -128,7 +128,7 @@ export default function ChildProfile() {
                           <Badge className="bg-brand text-white">New</Badge>
                         )}
                         {incident.hasExpertNotes && (
-                          <Badge variant="outline" className="border-border-strong text-text-label">
+                          <Badge className="bg-status-info-soft text-status-info border border-status-info-border">
                             Expert Review
                           </Badge>
                         )}
@@ -137,12 +137,12 @@ export default function ChildProfile() {
                     </div>
                     <div className="flex gap-2">
                       <Link to={`/parent/children/${id}/incidents/${incident.id}`}>
-                        <Button size="sm" variant="outline" className="border-border-strong text-text-heading hover:bg-surface-page">
+                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                           View Details
                         </Button>
                       </Link>
                       {incident.status === 'new' && (
-                        <Button size="sm" variant="outline" className="border-border-strong text-text-heading hover:bg-surface-page">
+                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
                           <CheckCircle2 className="w-4 h-4 mr-1" />
                           Mark as Seen
                         </Button>

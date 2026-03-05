@@ -125,7 +125,7 @@ export default function NewIncidentStep4Triggers() {
         <Card className="p-6 border border-border-default bg-surface-card space-y-4">
           <div>
             <h2 className="text-lg font-semibold text-text-heading mb-1">
-              Antecedent Triggers <span className="text-red-500">*</span>
+              Antecedent Triggers <span className="text-status-error">*</span>
             </h2>
             <p className="text-sm text-text-body">
               What was happening before the behavior occurred?
@@ -232,7 +232,7 @@ export default function NewIncidentStep4Triggers() {
         <Card className="p-6 border border-border-default bg-surface-card space-y-4">
           <div>
             <h2 className="text-lg font-semibold text-text-heading mb-1">
-              Intervention Strategies Used <span className="text-red-500">*</span>
+              Intervention Strategies Used <span className="text-status-error">*</span>
             </h2>
             <p className="text-sm text-text-body">
               What strategies did you try to address the behavior?
@@ -346,7 +346,7 @@ export default function NewIncidentStep4Triggers() {
           </Button>
           <Button
             onClick={handleNext}
-            className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+            className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
           >
             Next →
           </Button>

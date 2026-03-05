@@ -117,7 +117,7 @@ export default function NewIncidentStep4() {
               <Button
                 onClick={() => navigate(`/teacher/students/${studentId}/ai-support`)}
                 variant="outline"
-                className="border-brand text-text-heading hover:bg-surface-elevated rounded-lg"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Get AI Suggestions
@@ -149,7 +149,7 @@ export default function NewIncidentStep4() {
           {/* Outcome */}
           <div>
             <Label className="text-text-heading mb-3 block">
-              Outcome <span className="text-red-500">*</span>
+              Outcome <span className="text-status-error">*</span>
             </Label>
             <RadioGroup value={outcome} onValueChange={setOutcome}>
               <div className="space-y-2">
@@ -198,7 +198,7 @@ export default function NewIncidentStep4() {
             <div className="space-y-4 p-4 bg-surface-page rounded-lg">
               <div>
                 <Label htmlFor="expert" className="text-text-heading">
-                  Select Behavioral Expert <span className="text-red-500">*</span>
+                  Select Behavioral Expert <span className="text-status-error">*</span>
                 </Label>
                 <Select value={expertId} onValueChange={setExpertId}>
                   <SelectTrigger className="mt-1 border-border-default">
@@ -248,7 +248,7 @@ export default function NewIncidentStep4() {
             </Button>
             <Button
               onClick={handleSubmit}
-              className="bg-brand hover:bg-brand-dark text-white rounded-lg"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm rounded-lg"
             >
               Submit Incident
             </Button>
