@@ -22,11 +22,11 @@ export default function AdminDashboard() {
   });
 
   const recentActivity = [
-    { icon: UserPlus, text: 'New student Marcus Thompson enrolled', time: '2 hours ago', color: 'text-status-success' },
-    { icon: FileText, text: 'Teacher Maria Johnson updated class roster', time: '4 hours ago', color: 'text-brand' },
-    { icon: CheckCircle, text: 'Parent account activated for Chen family', time: '5 hours ago', color: 'text-status-success' },
-    { icon: AlertTriangle, text: '3 students need behavioral expert assignment', time: 'Yesterday', color: 'text-status-warning' },
-    { icon: Clock, text: 'System backup completed successfully', time: 'Yesterday', color: 'text-text-label' },
+    { icon: UserPlus, text: 'New student Marcus Thompson enrolled', time: '2 hours ago', color: 'text-status-success', bg: 'bg-status-success-soft' },
+    { icon: FileText, text: 'Teacher Maria Johnson updated class roster', time: '4 hours ago', color: 'text-brand', bg: 'bg-status-info-soft' },
+    { icon: CheckCircle, text: 'Parent account activated for Chen family', time: '5 hours ago', color: 'text-status-success', bg: 'bg-status-success-soft' },
+    { icon: AlertTriangle, text: '3 students need behavioral expert assignment', time: 'Yesterday', color: 'text-status-warning', bg: 'bg-status-warning-soft' },
+    { icon: Clock, text: 'System backup completed successfully', time: 'Yesterday', color: 'text-text-label', bg: 'bg-status-info-soft' },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Students</p>
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                     <Users className="w-5 h-5 text-brand" />
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Teachers</p>
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-status-success-soft flex items-center justify-center">
                     <GraduationCap className="w-5 h-5 text-status-success" />
                   </div>
                 </div>
@@ -76,7 +76,7 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Experts</p>
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-status-warning-soft flex items-center justify-center">
                     <Brain className="w-5 h-5 text-status-warning" />
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Parents</p>
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                     <UserCircle className="w-5 h-5 text-brand" />
                   </div>
                 </div>
@@ -114,24 +114,21 @@ export default function AdminDashboard() {
             </Button>
             <Button
               onClick={() => navigate('/admin/teachers/new')}
-              variant="outline"
-              className="border-border-default text-text-heading hover:bg-surface-hover"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm"
             >
               <Plus className="w-4 h-4 mr-2" />
               Add Teacher
             </Button>
             <Button
               onClick={() => navigate('/admin/experts/new')}
-              variant="outline"
-              className="border-border-default text-text-heading hover:bg-surface-hover"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm"
             >
               <Plus className="w-4 h-4 mr-2" />
               Add Expert
             </Button>
             <Button
               onClick={() => navigate('/admin/parents/new')}
-              variant="outline"
-              className="border-border-default text-text-heading hover:bg-surface-hover"
+              className="bg-brand hover:bg-brand-dark text-white shadow-sm"
             >
               <Plus className="w-4 h-4 mr-2" />
               Add Parent
@@ -193,7 +190,7 @@ export default function AdminDashboard() {
                 const Icon = item.icon;
                 return (
                   <div key={index} className="flex items-start gap-3 p-3 bg-card rounded-lg border border-border-light">
-                    <div className="w-8 h-8 rounded-full bg-surface-elevated flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className={`w-8 h-8 rounded-full ${item.bg} flex items-center justify-center flex-shrink-0 mt-0.5`}>
                       <Icon className={`w-4 h-4 ${item.color}`} />
                     </div>
                     <div className="flex-1 min-w-0">

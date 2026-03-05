@@ -22,7 +22,7 @@ export default function TeacherForgotPassword() {
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="w-full max-w-md">
           <Card className="p-8 border border-border-default bg-surface-card text-center">
-            <div className="w-16 h-16 rounded-full bg-surface-elevated flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center mx-auto mb-4">
               <svg
                 className="w-8 h-8 text-text-heading"
                 fill="none"

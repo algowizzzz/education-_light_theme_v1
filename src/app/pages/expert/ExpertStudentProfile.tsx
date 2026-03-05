@@ -41,7 +41,7 @@ export default function ExpertStudentProfile() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center">
                 <span className="text-2xl text-text-label">
                   {student.firstName[0]}{student.lastName[0]}
                 </span>

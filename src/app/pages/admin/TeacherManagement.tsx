@@ -152,7 +152,7 @@ export default function TeacherManagement() {
                 <p className="text-sm text-text-body">Total Teachers</p>
                 <p className="text-2xl font-bold text-text-heading">{teachers.length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                 <UserCheck className="h-5 w-5 text-brand" />
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function TeacherManagement() {
                 <p className="text-sm text-text-body">Active</p>
                 <p className="text-2xl font-bold text-text-heading">{teachers.filter(t => t.status === 'Active').length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-success-soft flex items-center justify-center">
                 <UserCheck className="h-5 w-5 text-status-success" />
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function TeacherManagement() {
                 <p className="text-sm text-text-body">Inactive</p>
                 <p className="text-2xl font-bold text-text-heading">{teachers.filter(t => t.status === 'Inactive').length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-error-soft flex items-center justify-center">
                 <UserX className="h-5 w-5 text-status-error" />
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function TeacherManagement() {
             <div key={teacher.id} className="bg-surface-card border border-border-default rounded-lg p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
                     <User className="w-5 h-5 text-text-body" />
                   </div>
                   <div>

@@ -32,7 +32,7 @@ export default function StudentProfile() {
         <Card className="p-6 border border-border-default bg-surface-card">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center">
                 <User className="w-8 h-8 text-text-body" />
               </div>
               <div>

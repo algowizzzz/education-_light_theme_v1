@@ -157,7 +157,7 @@ export default function StudentManagement() {
                 <p className="text-sm text-text-body">Total</p>
                 <p className="text-2xl font-bold text-text-heading">{totalStudents}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                 <Users className="w-5 h-5 text-brand" />
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function StudentManagement() {
                 <p className="text-sm text-text-body">Active</p>
                 <p className="text-2xl font-bold text-text-heading">{activeStudents}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-success-soft flex items-center justify-center">
                 <User className="w-5 h-5 text-status-success" />
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function StudentManagement() {
                 <p className="text-sm text-text-body">Suspended</p>
                 <p className="text-2xl font-bold text-text-heading">{suspendedStudents}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-error-soft flex items-center justify-center">
                 <UserX className="w-5 h-5 text-status-error" />
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function StudentManagement() {
                         checked={selectedStudents.includes(student.id)}
                         onCheckedChange={() => toggleStudentSelection(student.id)}
                       />
-                      <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
                         <User className="w-5 h-5 text-text-body" />
                       </div>
                       <div>

@@ -48,7 +48,7 @@ export default function ChildrenList() {
               <CardContent className="p-4 md:p-6">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex items-start gap-3 md:gap-4 flex-1">
-                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-surface-elevated flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
                       <User className="w-6 h-6 md:w-8 md:h-8 text-text-body" />
                     </div>
                     <div className="flex-1">

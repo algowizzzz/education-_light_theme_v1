@@ -168,7 +168,7 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Total Parents</p>
                 <p className="text-2xl font-bold text-text-heading">{parents.length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                 <Users className="h-5 w-5 text-brand" />
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Activated</p>
                 <p className="text-2xl font-bold text-text-heading">{activatedCount}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-success-soft flex items-center justify-center">
                 <MailCheck className="h-5 w-5 text-status-success" />
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Pending</p>
                 <p className="text-2xl font-bold text-text-heading">{pendingCount}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-warning-soft flex items-center justify-center">
                 <MailCheck className="h-5 w-5 text-status-warning" />
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Active</p>
                 <p className="text-2xl font-bold text-text-heading">{parents.filter(p => p.status === 'Active').length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
                 <UserCheck className="h-5 w-5 text-brand" />
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function ParentManagement() {
             <div key={parent.id} className="bg-surface-card border border-border-default rounded-lg p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
                     <User className="w-5 h-5 text-text-body" />
                   </div>
                   <div>

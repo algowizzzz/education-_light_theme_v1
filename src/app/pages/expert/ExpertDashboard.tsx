@@ -73,7 +73,7 @@ export default function ExpertDashboard() {
                   {caseStats.activeCases}
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-status-info-soft flex items-center justify-center">
                 <User className="w-6 h-6 text-text-heading" />
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function ExpertDashboard() {
                   {caseStats.closedThisWeek}
                 </p>
               </div>
-              <div className="w-12 h-12 rounded-full bg-surface-elevated flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-status-info-soft flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-text-heading"
                   fill="none"

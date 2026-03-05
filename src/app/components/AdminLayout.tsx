@@ -59,11 +59,15 @@ export function AdminLayout({ children }: AdminLayoutProps) {
             <div className="flex items-center justify-between">
               {sidebarOpen ? (
                 <div className="flex items-center gap-3">
-                  <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-9 h-9" />
+                  <div className="bg-white rounded-lg p-1">
+                    <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-8 h-8" />
+                  </div>
                   <span className="font-bold text-lg text-white tracking-tight">BehaveBridge</span>
                 </div>
               ) : (
-                <img src="/logos/png-transparent/2.png" alt="BB" className="w-9 h-9 mx-auto" />
+                <div className="bg-white rounded-lg p-1 mx-auto">
+                  <img src="/logos/png-transparent/2.png" alt="BB" className="w-8 h-8" />
+                </div>
               )}
               <button
                 onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -141,7 +145,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
             <Menu className="w-6 h-6" />
           </button>
           <div className="flex items-center gap-2">
-            <img src="/logos/png-transparent/2.png" alt="BB" className="w-7 h-7" />
+            <div className="bg-white rounded-lg p-0.5">
+              <img src="/logos/png-transparent/2.png" alt="BB" className="w-6 h-6" />
+            </div>
             <h1 className="font-bold text-lg text-white">BehaveBridge</h1>
           </div>
           <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
@@ -163,7 +169,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
           <div className="p-5 border-b border-sidebar-border flex-shrink-0">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-9 h-9" />
+                <div className="bg-white rounded-lg p-1">
+                  <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-8 h-8" />
+                </div>
                 <span className="font-bold text-lg text-white tracking-tight">BehaveBridge</span>
               </div>
               <button
