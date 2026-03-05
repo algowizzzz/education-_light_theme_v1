@@ -299,7 +299,7 @@ export default function StudentManagement() {
                         onCheckedChange={() => toggleStudentSelection(student.id)}
                       />
                       <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                        <User className="w-5 h-5 text-text-body" />
+                        <User className="w-5 h-5 text-brand" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-text-heading">{student.name}</h3>

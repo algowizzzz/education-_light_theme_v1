@@ -75,8 +75,8 @@ export default function TeacherDashboard() {
                 onClick={() => navigate(`/teacher/students/${student.id}`)}
               >
                 <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center">
-                    <User className="w-5 h-5 text-brand-dark" />
+                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
+                    <User className="w-5 h-5 text-brand" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-heading">

@@ -80,7 +80,7 @@ export default function ParentMessages() {
                   <CardContent className="p-4">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                        <User className="w-6 h-6 text-text-body" />
+                        <User className="w-6 h-6 text-brand" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-3 mb-1">

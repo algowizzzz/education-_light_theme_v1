@@ -108,14 +108,14 @@ export default function Resources() {
   const getTypeIcon = (type: Resource['type']) => {
     switch (type) {
       case 'guide':
-        return <BookOpen className="w-4 h-4" />;
+        return <BookOpen className="w-4 h-4 text-brand" />;
       case 'video':
-        return <Video className="w-4 h-4" />;
+        return <Video className="w-4 h-4 text-brand" />;
       case 'template':
       case 'checklist':
-        return <FileText className="w-4 h-4" />;
+        return <FileText className="w-4 h-4 text-brand" />;
       default:
-        return <FileText className="w-4 h-4" />;
+        return <FileText className="w-4 h-4 text-brand" />;
     }
   };
 

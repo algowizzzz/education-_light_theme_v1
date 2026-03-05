@@ -106,7 +106,7 @@ export default function ParentMessageConversation() {
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-status-info-soft flex items-center justify-center">
-                <User className="w-6 h-6 text-text-body" />
+                <User className="w-6 h-6 text-brand" />
               </div>
               <div>
                 <h2 className="font-medium text-text-heading">{conversation.participantName}</h2>
@@ -129,7 +129,7 @@ export default function ParentMessageConversation() {
                 <div className="flex items-center gap-2 mb-1">
                   {message.senderRole !== 'parent' && (
                     <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center">
-                      <User className="w-4 h-4 text-text-body" />
+                      <User className="w-4 h-4 text-brand" />
                     </div>
                   )}
                   <div>

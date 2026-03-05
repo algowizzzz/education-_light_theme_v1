@@ -116,8 +116,8 @@ export default function TeacherStudents() {
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center flex-shrink-0">
-                          <User className="w-5 h-5 text-brand-dark" />
+                        <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
+                          <User className="w-5 h-5 text-brand" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-text-heading">{student.name}</h3>

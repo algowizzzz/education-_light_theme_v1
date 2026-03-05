@@ -33,7 +33,7 @@ export default function StudentProfile() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center">
-                <User className="w-8 h-8 text-text-body" />
+                <User className="w-8 h-8 text-brand" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-text-heading">

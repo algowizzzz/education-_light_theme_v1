@@ -42,15 +42,15 @@ export default function ParentNotifications() {
   const getIcon = (type: string) => {
     switch (type) {
       case 'incident':
-        return <AlertCircle className="h-5 w-5 text-text-heading" />;
+        return <AlertCircle className="h-5 w-5 text-brand" />;
       case 'update':
-        return <Info className="h-5 w-5 text-text-heading" />;
+        return <Info className="h-5 w-5 text-brand" />;
       case 'message':
-        return <Bell className="h-5 w-5 text-text-heading" />;
+        return <Bell className="h-5 w-5 text-brand" />;
       case 'reminder':
-        return <CheckCircle className="h-5 w-5 text-text-body" />;
+        return <CheckCircle className="h-5 w-5 text-brand" />;
       default:
-        return <Bell className="h-5 w-5 text-text-body" />;
+        return <Bell className="h-5 w-5 text-brand" />;
     }
   };
 

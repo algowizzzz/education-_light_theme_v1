@@ -28,7 +28,7 @@ export default function AssessmentConfirmation() {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <FileText className="h-4 w-4 text-text-heading" />
+                  <FileText className="h-4 w-4 text-brand" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -42,7 +42,7 @@ export default function AssessmentConfirmation() {
 
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <UserCheck className="h-4 w-4 text-text-heading" />
+                  <UserCheck className="h-4 w-4 text-brand" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -56,7 +56,7 @@ export default function AssessmentConfirmation() {
 
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <Bell className="h-4 w-4 text-text-heading" />
+                  <Bell className="h-4 w-4 text-brand" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -70,7 +70,7 @@ export default function AssessmentConfirmation() {
 
               <div className="flex items-start gap-3">
                 <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <Flag className="h-4 w-4 text-text-heading" />
+                  <Flag className="h-4 w-4 text-brand" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
