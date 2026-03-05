@@ -136,7 +136,7 @@ export default function NewIncidentStep1() {
           <Button
             variant="outline"
             onClick={() => navigate('/teacher/dashboard')}
-            className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
           >
             Cancel
           </Button>

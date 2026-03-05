@@ -200,7 +200,7 @@ export default function NewIncidentStep3() {
             <Button
               onClick={addCustomTrigger}
               variant="outline"
-              className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
             >
               Add
             </Button>
@@ -290,7 +290,7 @@ export default function NewIncidentStep3() {
             <Button
               onClick={addCustomStrategy}
               variant="outline"
-              className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
             >
               Add
             </Button>
@@ -302,7 +302,7 @@ export default function NewIncidentStep3() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
           >
             ← Back
           </Button>
@@ -310,7 +310,7 @@ export default function NewIncidentStep3() {
             <Button
               variant="outline"
               onClick={() => toast.success('Draft saved')}
-              className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
             >
               Save Draft
             </Button>

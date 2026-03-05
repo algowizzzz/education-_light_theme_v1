@@ -409,7 +409,7 @@ export default function NewIncidentStep2AI() {
             <Button
               variant="outline"
               onClick={handleEscalate}
-              className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
             >
               <AlertTriangle className="w-4 h-4 mr-2" />
               Escalate to Behavioral Expert

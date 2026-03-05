@@ -195,7 +195,7 @@ export default function NewIncidentStep4Triggers() {
               <Button
                 onClick={addCustomTrigger}
                 variant="outline"
-                className="border-border-default text-text-heading hover:bg-surface-page"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 <Plus className="w-4 h-4" />
               </Button>
@@ -212,7 +212,7 @@ export default function NewIncidentStep4Triggers() {
                 {selectedTriggers.map((trigger) => (
                   <div
                     key={trigger}
-                    className="inline-flex items-center gap-1 px-3 py-1 bg-surface-page border border-border-default rounded-full text-sm"
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-status-info-soft border border-brand-dark/30 rounded-full text-sm"
                   >
                     <span className="text-text-heading">{trigger}</span>
                     <button
@@ -302,7 +302,7 @@ export default function NewIncidentStep4Triggers() {
               <Button
                 onClick={addCustomStrategy}
                 variant="outline"
-                className="border-border-default text-text-heading hover:bg-surface-page"
+                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
               >
                 <Plus className="w-4 h-4" />
               </Button>
@@ -319,7 +319,7 @@ export default function NewIncidentStep4Triggers() {
                 {selectedStrategies.map((strategy) => (
                   <div
                     key={strategy}
-                    className="inline-flex items-center gap-1 px-3 py-1 bg-surface-page border border-border-default rounded-full text-sm"
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-status-info-soft border border-brand-dark/30 rounded-full text-sm"
                   >
                     <span className="text-text-heading">{strategy}</span>
                     <button
@@ -340,7 +340,7 @@ export default function NewIncidentStep4Triggers() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-border-default text-text-heading hover:bg-surface-page rounded-lg"
+            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
           >
             ← Back
           </Button>

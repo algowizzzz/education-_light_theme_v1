@@ -31,8 +31,8 @@ export function SuccessScreen({
     <div className="min-h-screen flex items-center justify-center p-4">
       <Card className="max-w-lg w-full p-8 border-border-default bg-surface-card text-center">
         <div className="flex justify-center mb-6">
-          <div className="rounded-full bg-surface-elevated p-4">
-            <CheckCircle className="w-16 h-16 text-text-heading" />
+          <div className="rounded-full bg-status-success-soft p-4">
+            <CheckCircle className="w-16 h-16 text-status-success" />
           </div>
         </div>
         

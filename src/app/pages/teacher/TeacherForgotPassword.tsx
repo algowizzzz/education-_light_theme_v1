@@ -50,7 +50,7 @@ export default function TeacherForgotPassword() {
               <Button
                 onClick={() => setEmailSent(false)}
                 variant="outline"
-                className="w-full border-border-default text-text-heading hover:bg-surface-page rounded-full"
+                className="w-full border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-full"
               >
                 Resend Link
               </Button>
