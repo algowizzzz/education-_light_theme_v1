@@ -103,6 +103,12 @@
   --table-row-hover: #ACD2E7;
   --table-stripe: #FEFEFE;
 
+  /* --- Icon accent colors (better contrast than info-blue) --- */
+  --icon-person: #4F46E5;
+  --icon-person-soft: rgba(79, 70, 229, 0.14);
+  --icon-general: #0D9488;
+  --icon-general-soft: rgba(13, 148, 136, 0.14);
+
   /* --- Badges --- */
   --badge-high: #1B67AB;
   --badge-medium: #34B7EF;
@@ -170,6 +176,10 @@
   --table-header-text: #FEFEFE;
   --table-row-hover: #ACD2E7;
   --table-stripe: #FEFEFE;
+  --icon-person: #4F46E5;
+  --icon-person-soft: rgba(79, 70, 229, 0.14);
+  --icon-general: #0D9488;
+  --icon-general-soft: rgba(13, 148, 136, 0.14);
 }
 
 @theme inline {
@@ -250,6 +260,10 @@
   --color-badge-medium: var(--badge-medium);
   --color-badge-low-bg: var(--badge-low-bg);
   --color-badge-low-text: var(--badge-low-text);
+  --color-icon-person: var(--icon-person);
+  --color-icon-person-soft: var(--icon-person-soft);
+  --color-icon-general: var(--icon-general);
+  --color-icon-general-soft: var(--icon-general-soft);
 }
 
 @layer base {

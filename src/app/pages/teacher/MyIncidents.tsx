@@ -215,7 +215,7 @@ export default function MyIncidents() {
                   setDateFilter('all');
                 }}
                 variant="outline"
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 Clear Filters
               </Button>
@@ -316,7 +316,7 @@ export default function MyIncidents() {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
                           >
                             View Details
                           </Button>
@@ -340,7 +340,7 @@ export default function MyIncidents() {
               variant="outline"
               size="sm"
               disabled
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
             >
               Previous
             </Button>
@@ -348,7 +348,7 @@ export default function MyIncidents() {
               variant="outline"
               size="sm"
               disabled
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
             >
               Next
             </Button>

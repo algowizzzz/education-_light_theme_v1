@@ -196,7 +196,7 @@ export default function ParentDashboard() {
 
             <Button
               variant="outline"
-              className="w-full mt-3 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="w-full mt-3 border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
               onClick={() => navigate(`/parent/children/${marcusChild.id}/cases`)}
             >
               View All Cases

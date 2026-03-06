@@ -117,7 +117,7 @@ export default function NewIncidentStep4() {
               <Button
                 onClick={() => navigate(`/teacher/students/${studentId}/ai-support`)}
                 variant="outline"
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Get AI Suggestions
@@ -234,7 +234,7 @@ export default function NewIncidentStep4() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
           >
             ← Back
           </Button>
@@ -242,7 +242,7 @@ export default function NewIncidentStep4() {
             <Button
               variant="outline"
               onClick={() => toast.success('Draft saved')}
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
             >
               Save Draft
             </Button>

@@ -27,8 +27,8 @@ export default function AssessmentConfirmation() {
             <h3 className="text-base mb-4">Status Updates</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <FileText className="h-4 w-4 text-brand" />
+                <div className="w-8 h-8 rounded-full bg-icon-general-soft flex items-center justify-center flex-shrink-0">
+                  <FileText className="h-4 w-4 text-icon-general" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -41,8 +41,8 @@ export default function AssessmentConfirmation() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <UserCheck className="h-4 w-4 text-brand" />
+                <div className="w-8 h-8 rounded-full bg-icon-person-soft flex items-center justify-center flex-shrink-0">
+                  <UserCheck className="h-4 w-4 text-icon-person" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -55,8 +55,8 @@ export default function AssessmentConfirmation() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <Bell className="h-4 w-4 text-brand" />
+                <div className="w-8 h-8 rounded-full bg-icon-general-soft flex items-center justify-center flex-shrink-0">
+                  <Bell className="h-4 w-4 text-icon-general" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -69,8 +69,8 @@ export default function AssessmentConfirmation() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                  <Flag className="h-4 w-4 text-brand" />
+                <div className="w-8 h-8 rounded-full bg-icon-general-soft flex items-center justify-center flex-shrink-0">
+                  <Flag className="h-4 w-4 text-icon-general" />
                 </div>
                 <div className="flex-1">
                   <p className="text-sm">
@@ -111,14 +111,14 @@ export default function AssessmentConfirmation() {
           <Button
             onClick={() => navigate('/expert/students/STU-4298')}
             variant="outline"
-            className="flex-1 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+            className="flex-1 border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
           >
             View Student Profile
           </Button>
           <Button
             onClick={() => navigate('/expert/messages')}
             variant="outline"
-            className="flex-1 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+            className="flex-1 border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
           >
             Go to Messages
           </Button>
@@ -130,7 +130,7 @@ export default function AssessmentConfirmation() {
           </Button>
           <Button
             variant="outline"
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Save Draft
           </Button>

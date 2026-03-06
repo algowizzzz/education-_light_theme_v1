@@ -169,14 +169,14 @@ export default function ViewTeacherAccount() {
           <Button
             variant="outline"
             onClick={() => navigate('/admin/teachers')}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Back to List
           </Button>
           <Button
             variant="outline"
             onClick={() => navigate(`/admin/teachers/${id}/edit`)}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Edit Teacher
           </Button>

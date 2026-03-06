@@ -46,8 +46,8 @@ export default function ChildProfile() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center">
-                <span className="text-2xl text-brand">
+              <div className="w-16 h-16 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <span className="text-2xl text-icon-person">
                   {student.firstName[0]}{student.lastName[0]}
                 </span>
               </div>
@@ -98,7 +98,7 @@ export default function ChildProfile() {
             <div className="flex items-center justify-between">
               <CardTitle className="text-lg text-text-heading">Recent Incidents</CardTitle>
               <Link to={`/parent/children/${id}/incidents`}>
-                <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                   View All
                 </Button>
               </Link>
@@ -137,12 +137,12 @@ export default function ChildProfile() {
                     </div>
                     <div className="flex gap-2">
                       <Link to={`/parent/children/${id}/incidents/${incident.id}`}>
-                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                           View Details
                         </Button>
                       </Link>
                       {incident.status === 'new' && (
-                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                        <Button size="sm" variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                           <CheckCircle2 className="w-4 h-4 mr-1" />
                           Mark as Seen
                         </Button>

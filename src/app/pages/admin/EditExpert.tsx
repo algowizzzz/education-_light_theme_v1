@@ -229,7 +229,7 @@ export default function EditExpert() {
                 type="button"
                 variant="outline"
                 onClick={() => navigate('/admin/experts')}
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Cancel
               </Button>

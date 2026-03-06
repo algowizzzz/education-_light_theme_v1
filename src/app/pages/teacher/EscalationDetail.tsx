@@ -92,7 +92,7 @@ export default function EscalationDetail() {
                 </div>
               </div>
               <Link to={`/teacher/students/${caseData.student.id}`}>
-                <Button variant="outline" className="border-border-strong text-text-heading hover:bg-surface-page">
+                <Button variant="outline" className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page">
                   View Full Profile
                 </Button>
               </Link>

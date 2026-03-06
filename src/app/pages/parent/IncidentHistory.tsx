@@ -152,7 +152,7 @@ export default function IncidentHistory() {
             className={
               timeRange === 'week'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Week
@@ -163,7 +163,7 @@ export default function IncidentHistory() {
             className={
               timeRange === 'month'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Month
@@ -174,7 +174,7 @@ export default function IncidentHistory() {
             className={
               timeRange === 'quarter'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Quarter
@@ -185,7 +185,7 @@ export default function IncidentHistory() {
             className={
               timeRange === 'year'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Year
@@ -254,13 +254,13 @@ export default function IncidentHistory() {
                   <div className="flex gap-4">
                     {/* Timeline Dot */}
                     <div className="flex flex-col items-center">
-                      <div className={`w-12 h-12 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${
-                        incident.status === 'new' 
-                          ? 'border-brand bg-brand' 
-                          : 'border-border-default bg-surface-card'
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${
+                        incident.status === 'new'
+                          ? 'bg-status-warning-soft'
+                          : 'bg-icon-general-soft'
                       }`}>
                         <AlertCircle className={`w-6 h-6 ${
-                          incident.status === 'new' ? 'text-white' : 'text-text-body'
+                          incident.status === 'new' ? 'text-status-warning' : 'text-icon-general'
                         }`} />
                       </div>
                     </div>

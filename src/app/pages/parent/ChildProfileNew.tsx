@@ -32,8 +32,8 @@ export default function ChildProfileNew() {
         <Card className="p-6 border border-border-default bg-surface-card">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 rounded-full bg-status-info-soft flex items-center justify-center">
-                <User className="w-8 h-8 text-brand" />
+              <div className="w-16 h-16 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <User className="w-8 h-8 text-icon-person" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-text-heading">
@@ -55,7 +55,7 @@ export default function ChildProfileNew() {
               <Button
                 onClick={() => navigate(`/parent/children/${id}/cases`)}
                 variant="outline"
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 View Cases
               </Button>
@@ -140,7 +140,7 @@ export default function ChildProfileNew() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                    className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
                   >
                     View All
                   </Button>

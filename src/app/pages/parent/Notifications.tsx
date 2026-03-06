@@ -42,15 +42,15 @@ export default function ParentNotifications() {
   const getIcon = (type: string) => {
     switch (type) {
       case 'incident':
-        return <AlertCircle className="h-5 w-5 text-brand" />;
+        return <AlertCircle className="h-5 w-5 text-icon-general" />;
       case 'update':
-        return <Info className="h-5 w-5 text-brand" />;
+        return <Info className="h-5 w-5 text-icon-general" />;
       case 'message':
-        return <Bell className="h-5 w-5 text-brand" />;
+        return <Bell className="h-5 w-5 text-icon-general" />;
       case 'reminder':
-        return <CheckCircle className="h-5 w-5 text-brand" />;
+        return <CheckCircle className="h-5 w-5 text-icon-general" />;
       default:
-        return <Bell className="h-5 w-5 text-brand" />;
+        return <Bell className="h-5 w-5 text-icon-general" />;
     }
   };
 
@@ -84,7 +84,7 @@ export default function ParentNotifications() {
             >
               <CardContent className="p-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-icon-general-soft flex items-center justify-center flex-shrink-0">
                     {getIcon(notification.type)}
                   </div>
                   <div className="flex-1 min-w-0">

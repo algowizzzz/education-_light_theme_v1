@@ -333,7 +333,7 @@ This incident represents the third math-related escalation this week, showing a 
                 <Button
                   onClick={handleGenerateInterventionPlan}
                   variant="outline"
-                  className="border-border-strong text-text-heading hover:bg-surface-page"
+                  className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                 >
                   <Sparkles className="w-4 h-4 mr-2" />
                   Generate Plan
@@ -392,7 +392,7 @@ This incident represents the third math-related escalation this week, showing a 
             <Button
               variant="outline"
               onClick={() => setShowAssessmentForm(false)}
-              className="border-border-strong text-text-heading hover:bg-surface-page"
+              className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
             >
               Save Draft
             </Button>
@@ -430,7 +430,7 @@ This incident represents the third math-related escalation this week, showing a 
                 </div>
               </div>
               <Link to={`/expert/students/${caseData.student.id}`}>
-                <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                   View Full Profile
                 </Button>
               </Link>
@@ -585,7 +585,7 @@ This incident represents the third math-related escalation this week, showing a 
               <Button
                 onClick={handleGenerateRecommendations}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Generate Recommendations

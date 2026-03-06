@@ -142,7 +142,7 @@ export default function CaseManagement() {
                         setSelectedStudent(caseItem.id);
                         setShowMonitoringModal(true);
                       }}
-                      className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                      className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
                     >
                       <Flag className="w-4 h-4 mr-2" />
                       Set Monitoring
@@ -153,7 +153,7 @@ export default function CaseManagement() {
                         setSelectedStudent(caseItem.id);
                         setShowCloseModal(true);
                       }}
-                      className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                      className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
                     >
                       <Archive className="w-4 h-4 mr-2" />
                       Close Case

@@ -117,7 +117,7 @@ export default function AIInsights() {
             className={
               timeRange === 'week'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Week
@@ -128,7 +128,7 @@ export default function AIInsights() {
             className={
               timeRange === 'month'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Month
@@ -139,7 +139,7 @@ export default function AIInsights() {
             className={
               timeRange === 'quarter'
                 ? 'bg-brand hover:bg-brand-dark text-white shadow-sm'
-                : 'border-border-strong text-text-heading hover:bg-surface-page'
+                : 'border-border-strong text-text-heading bg-surface-card hover:bg-surface-page'
             }
           >
             This Quarter

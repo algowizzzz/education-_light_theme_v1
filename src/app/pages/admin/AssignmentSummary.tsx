@@ -101,8 +101,8 @@ export default function AssignmentSummary() {
                     {ASSIGNMENT_DATA.unassignedToExpert.length}
                   </p>
                 </div>
-                <div className="w-12 h-12 rounded-full bg-status-info-soft flex items-center justify-center">
-                  <UserCheck className="w-6 h-6 text-status-info" />
+                <div className="w-12 h-12 rounded-full bg-icon-person-soft flex items-center justify-center">
+                  <UserCheck className="w-6 h-6 text-icon-person" />
                 </div>
               </div>
             </CardContent>

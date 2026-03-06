@@ -366,7 +366,7 @@ export default function ViewStudent() {
                 ))}
                 <Button
                   variant="outline"
-                  className="w-full border-border-strong text-text-heading hover:bg-surface-page"
+                  className="w-full border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                 >
                   View All Incidents
                 </Button>

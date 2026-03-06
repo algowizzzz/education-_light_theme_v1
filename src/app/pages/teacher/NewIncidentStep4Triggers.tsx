@@ -195,7 +195,7 @@ export default function NewIncidentStep4Triggers() {
               <Button
                 onClick={addCustomTrigger}
                 variant="outline"
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 <Plus className="w-4 h-4" />
               </Button>
@@ -302,7 +302,7 @@ export default function NewIncidentStep4Triggers() {
               <Button
                 onClick={addCustomStrategy}
                 variant="outline"
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 <Plus className="w-4 h-4" />
               </Button>
@@ -340,7 +340,7 @@ export default function NewIncidentStep4Triggers() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
           >
             ← Back
           </Button>

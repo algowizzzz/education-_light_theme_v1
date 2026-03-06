@@ -86,8 +86,8 @@ export default function NewIncidentStep1() {
                     }`}
                   >
                     <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                        <User className="w-5 h-5 text-brand" />
+                      <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                        <User className="w-5 h-5 text-icon-person" />
                       </div>
                       <div>
                         <p className="font-medium text-text-heading">{student.name}</p>
@@ -136,7 +136,7 @@ export default function NewIncidentStep1() {
           <Button
             variant="outline"
             onClick={() => navigate('/teacher/dashboard')}
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
           >
             Cancel
           </Button>

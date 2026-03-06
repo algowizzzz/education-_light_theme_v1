@@ -152,8 +152,8 @@ export default function TeacherManagement() {
                 <p className="text-sm text-text-body">Total Teachers</p>
                 <p className="text-2xl font-bold text-text-heading">{teachers.length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                <UserCheck className="h-5 w-5 text-brand" />
+              <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <UserCheck className="h-5 w-5 text-icon-person" />
               </div>
             </div>
           </Card>
@@ -208,7 +208,7 @@ export default function TeacherManagement() {
               <Button
                 variant="outline"
                 onClick={() => navigate('/admin/teachers/bulk-import')}
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 <Upload className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Bulk Import</span>
@@ -230,8 +230,8 @@ export default function TeacherManagement() {
             <div key={teacher.id} className="bg-surface-card border border-border-default rounded-lg p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                    <User className="w-5 h-5 text-brand" />
+                  <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center flex-shrink-0">
+                    <User className="w-5 h-5 text-icon-person" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-heading">{teacher.name}</h3>

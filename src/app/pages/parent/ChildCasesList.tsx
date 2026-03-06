@@ -186,7 +186,7 @@ export default function ChildCasesList() {
               <Button
                 onClick={() => setStatusFilter('all')}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Clear Filter
               </Button>

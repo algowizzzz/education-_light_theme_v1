@@ -261,7 +261,7 @@ export default function AddStudent() {
               type="button"
               variant="outline"
               onClick={() => navigate('/admin/students')}
-              className="border-border-strong text-text-heading hover:bg-surface-page w-full sm:w-auto"
+              className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page w-full sm:w-auto"
             >
               Cancel
             </Button>

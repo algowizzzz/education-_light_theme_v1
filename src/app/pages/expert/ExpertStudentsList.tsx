@@ -99,7 +99,7 @@ export default function ExpertStudentsList() {
                   setCaseFilter('all');
                 }}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Clear Filters
               </Button>
@@ -148,7 +148,7 @@ export default function ExpertStudentsList() {
                         <Button
                           variant="outline"
                           size="sm"
-                          className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                          className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
                         >
                           View Profile
                         </Button>

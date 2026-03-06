@@ -143,7 +143,7 @@ export default function ViewParentAccount() {
             <Button
               variant="outline"
               onClick={() => navigate(`/admin/parents/${id}/link`)}
-              className="border-border-strong text-text-heading hover:bg-surface-page"
+              className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
             >
               Link Additional Student
             </Button>
@@ -268,14 +268,14 @@ export default function ViewParentAccount() {
           <Button
             variant="outline"
             onClick={() => navigate('/admin/parents')}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Back to List
           </Button>
           <Button
             variant="outline"
             onClick={() => navigate(`/admin/parents/${id}/edit`)}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Edit Parent
           </Button>

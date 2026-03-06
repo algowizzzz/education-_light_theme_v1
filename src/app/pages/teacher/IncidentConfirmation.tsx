@@ -78,14 +78,14 @@ export default function IncidentConfirmation() {
             <Button
               onClick={() => navigate(`/teacher/incidents/${data.incidentId}`)}
               variant="outline"
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
             >
               View Incident Details
             </Button>
             <Button
               onClick={() => navigate('/teacher/incidents/new')}
               variant="outline"
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
             >
               Log Another Incident
             </Button>

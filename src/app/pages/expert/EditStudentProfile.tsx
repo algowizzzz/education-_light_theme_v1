@@ -361,7 +361,7 @@ export function EditStudentProfile() {
             type="button"
             variant="outline"
             onClick={() => navigate(`/expert/students/${id}`)}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             <X className="w-4 h-4 mr-2" />
             Cancel

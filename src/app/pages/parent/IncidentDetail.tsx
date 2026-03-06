@@ -184,7 +184,7 @@ export default function ParentIncidentDetail() {
                 onClick={handleSendFeedback}
                 disabled={!feedback.trim()}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Send Feedback to Expert
               </Button>

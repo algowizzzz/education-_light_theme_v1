@@ -306,12 +306,12 @@ export default function NewIncidentStep2AI() {
                 <div className={`flex gap-3 max-w-[80%] ${message.sender === 'teacher' ? 'flex-row-reverse' : 'flex-row'}`}>
                   {/* Avatar */}
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    message.sender === 'ai' ? 'bg-brand' : 'bg-status-info-soft'
+                    message.sender === 'ai' ? 'bg-status-warning-soft' : 'bg-icon-person-soft'
                   }`}>
                     {message.sender === 'ai' ? (
-                      <Lightbulb className="w-4 h-4 text-white" />
+                      <Lightbulb className="w-4 h-4 text-status-warning" />
                     ) : (
-                      <User className="w-4 h-4 text-text-body" />
+                      <User className="w-4 h-4 text-icon-person" />
                     )}
                   </div>
 
@@ -364,8 +364,8 @@ export default function NewIncidentStep2AI() {
             {isTyping && (
               <div className="flex justify-start">
                 <div className="flex gap-3 max-w-[80%]">
-                  <div className="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="w-4 h-4 text-white" />
+                  <div className="w-8 h-8 rounded-full bg-status-warning-soft flex items-center justify-center flex-shrink-0">
+                    <Lightbulb className="w-4 h-4 text-status-warning" />
                   </div>
                   <div className="bg-surface-page rounded-lg p-3">
                     <div className="flex gap-1">
@@ -409,7 +409,7 @@ export default function NewIncidentStep2AI() {
             <Button
               variant="outline"
               onClick={handleEscalate}
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
             >
               <AlertTriangle className="w-4 h-4 mr-2" />
               Escalate to Behavioral Expert

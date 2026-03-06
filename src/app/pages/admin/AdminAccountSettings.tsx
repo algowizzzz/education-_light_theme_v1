@@ -77,8 +77,8 @@ export function AdminAccountSettings() {
             <CardContent className="relative -mt-10 px-6 pb-6">
               <div className="flex flex-col md:flex-row md:items-end gap-4">
                 {/* Avatar */}
-                <div className="w-20 h-20 rounded-full bg-status-info-soft border-4 border-surface-card flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <User className="w-10 h-10 text-brand" />
+                <div className="w-20 h-20 rounded-full bg-icon-person-soft border-4 border-surface-card flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <User className="w-10 h-10 text-icon-person" />
                 </div>
                 <div className="flex-1 pt-2 md:pt-10">
                   <h2 className="text-xl font-bold text-text-heading">{adminInfo.name}</h2>
@@ -108,8 +108,8 @@ export function AdminAccountSettings() {
             <Card className="bg-surface-card border border-surface-card-border">
               <CardHeader className="pb-3">
                 <CardTitle className="text-base text-text-heading flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-md bg-status-info-soft flex items-center justify-center">
-                    <User className="w-4 h-4 text-brand" />
+                  <div className="w-7 h-7 rounded-md bg-icon-person-soft flex items-center justify-center">
+                    <User className="w-4 h-4 text-icon-person" />
                   </div>
                   Account Information
                 </CardTitle>
@@ -214,8 +214,8 @@ export function AdminAccountSettings() {
 
                 <div className="bg-card rounded-lg p-4 border border-border-light">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-full bg-status-info-soft flex items-center justify-center">
-                      <Monitor className="w-4 h-4 text-brand" />
+                    <div className="w-9 h-9 rounded-full bg-icon-general-soft flex items-center justify-center">
+                      <Monitor className="w-4 h-4 text-icon-general" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-text-heading">Sessions</p>

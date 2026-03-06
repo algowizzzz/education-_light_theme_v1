@@ -166,7 +166,7 @@ export default function CaseAssessment() {
               <Button
                 variant="outline"
                 onClick={() => setShowPreviewModal(true)}
-                className="w-full mt-4 border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="w-full mt-4 border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 <FileText className="h-4 w-4 mr-2" />
                 Preview Profile Changes

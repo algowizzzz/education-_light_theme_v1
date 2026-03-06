@@ -140,11 +140,11 @@ export default function AIAnalysis() {
               <p className="text-text-body">{studentData.name} - {studentData.grade} Grade</p>
             </div>
             <div className="flex gap-2">
-              <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+              <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                 <RefreshCw className="h-4 w-4 mr-2" />
                 Request Deeper Analysis
               </Button>
-              <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+              <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                 <Download className="h-4 w-4 mr-2" />
                 Export Report
               </Button>

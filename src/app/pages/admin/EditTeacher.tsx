@@ -219,7 +219,7 @@ export default function EditTeacher() {
                 type="button"
                 variant="outline"
                 onClick={() => navigate('/admin/teachers')}
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Cancel
               </Button>

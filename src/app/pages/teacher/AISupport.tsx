@@ -174,7 +174,7 @@ export default function AISupport() {
                   <Button
                     variant="outline"
                     onClick={() => navigate(`/teacher/incidents/new/step1?studentId=${id}`)}
-                    className="border-border-strong text-text-heading hover:bg-surface-page"
+                    className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                   >
                     Request Expert Review
                   </Button>
@@ -192,7 +192,7 @@ export default function AISupport() {
               <Button
                 variant="outline"
                 onClick={() => navigate(`/teacher/students/${id}`)}
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Return to Profile
               </Button>

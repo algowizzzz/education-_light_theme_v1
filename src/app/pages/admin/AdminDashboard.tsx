@@ -23,10 +23,10 @@ export default function AdminDashboard() {
 
   const recentActivity = [
     { icon: UserPlus, text: 'New student Marcus Thompson enrolled', time: '2 hours ago', color: 'text-status-success', bg: 'bg-status-success-soft' },
-    { icon: FileText, text: 'Teacher Maria Johnson updated class roster', time: '4 hours ago', color: 'text-brand', bg: 'bg-status-info-soft' },
+    { icon: FileText, text: 'Teacher Maria Johnson updated class roster', time: '4 hours ago', color: 'text-icon-general', bg: 'bg-icon-general-soft' },
     { icon: CheckCircle, text: 'Parent account activated for Chen family', time: '5 hours ago', color: 'text-status-success', bg: 'bg-status-success-soft' },
     { icon: AlertTriangle, text: '3 students need behavioral expert assignment', time: 'Yesterday', color: 'text-status-warning', bg: 'bg-status-warning-soft' },
-    { icon: Clock, text: 'System backup completed successfully', time: 'Yesterday', color: 'text-text-label', bg: 'bg-status-info-soft' },
+    { icon: Clock, text: 'System backup completed successfully', time: 'Yesterday', color: 'text-text-label', bg: 'bg-icon-general-soft' },
   ];
 
   return (
@@ -46,8 +46,8 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Students</p>
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                    <Users className="w-5 h-5 text-brand" />
+                  <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                    <Users className="w-5 h-5 text-icon-person" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-text-heading">{statistics.students}</p>
@@ -91,8 +91,8 @@ export default function AdminDashboard() {
               <div className="flex-1 p-5">
                 <div className="flex items-center justify-between mb-3">
                   <p className="text-sm text-text-label">Parents</p>
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                    <UserCircle className="w-5 h-5 text-brand" />
+                  <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                    <UserCircle className="w-5 h-5 text-icon-person" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-text-heading">{statistics.parents}</p>
@@ -163,8 +163,8 @@ export default function AdminDashboard() {
               </div>
               <div className="flex items-center justify-between p-3 bg-card rounded-lg border border-border-light">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-status-info-soft flex items-center justify-center">
-                    <Brain className="w-4 h-4 text-status-info" />
+                  <div className="w-8 h-8 rounded-full bg-icon-general-soft flex items-center justify-center">
+                    <Brain className="w-4 h-4 text-icon-general" />
                   </div>
                   <span className="text-sm text-text-heading">No Expert Assigned</span>
                 </div>

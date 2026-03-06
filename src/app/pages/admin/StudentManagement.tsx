@@ -118,7 +118,7 @@ export default function StudentManagement() {
             <div className="flex gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                  <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                     <Upload className="w-4 h-4 md:mr-2" />
                     <span className="hidden md:inline">Bulk Actions</span>
                   </Button>
@@ -157,8 +157,8 @@ export default function StudentManagement() {
                 <p className="text-sm text-text-body">Total</p>
                 <p className="text-2xl font-bold text-text-heading">{totalStudents}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                <Users className="w-5 h-5 text-brand" />
+              <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <Users className="w-5 h-5 text-icon-person" />
               </div>
             </div>
           </Card>
@@ -245,7 +245,7 @@ export default function StudentManagement() {
             <div className="flex gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft">
+                  <Button variant="outline" size="sm" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
                     Bulk Actions
                   </Button>
                 </DropdownMenuTrigger>
@@ -277,7 +277,7 @@ export default function StudentManagement() {
                   setStatusFilter('all');
                 }}
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Clear Filters
               </Button>
@@ -298,8 +298,8 @@ export default function StudentManagement() {
                         checked={selectedStudents.includes(student.id)}
                         onCheckedChange={() => toggleStudentSelection(student.id)}
                       />
-                      <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                        <User className="w-5 h-5 text-brand" />
+                      <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center flex-shrink-0">
+                        <User className="w-5 h-5 text-icon-person" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-text-heading">{student.name}</h3>

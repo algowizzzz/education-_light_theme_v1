@@ -18,8 +18,8 @@ export function NoExpertAssigned() {
 
         <Card className="border-border-default p-12">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-status-info-soft mb-4">
-              <AlertCircle className="w-8 h-8 text-text-body" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-icon-general-soft mb-4">
+              <AlertCircle className="w-8 h-8 text-icon-general" />
             </div>
             <h2 className="text-xl text-text-heading font-semibold mb-2">
               No Behavioral Expert Assigned

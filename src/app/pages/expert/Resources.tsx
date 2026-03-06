@@ -248,7 +248,7 @@ export default function Resources() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-start gap-3 flex-1">
-                      <div className="p-2 bg-status-info-soft rounded border border-border-light">
+                      <div className="p-2 bg-icon-general-soft rounded border border-border-light">
                         {getTypeIcon(resource.type)}
                       </div>
                       <div className="flex-1">
@@ -287,7 +287,7 @@ export default function Resources() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-border-strong text-text-heading hover:bg-surface-page"
+                        className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                       >
                         <Download className="w-3 h-3 mr-1" />
                         Download
@@ -297,7 +297,7 @@ export default function Resources() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-border-strong text-text-heading hover:bg-surface-page"
+                        className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                       >
                         <ExternalLink className="w-3 h-3 mr-1" />
                         Open

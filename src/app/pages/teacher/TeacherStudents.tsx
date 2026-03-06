@@ -116,8 +116,8 @@ export default function TeacherStudents() {
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                          <User className="w-5 h-5 text-brand" />
+                        <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center flex-shrink-0">
+                          <User className="w-5 h-5 text-icon-person" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-text-heading">{student.name}</h3>
@@ -165,7 +165,7 @@ export default function TeacherStudents() {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+                            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
                             onClick={(e) => {
                               e.stopPropagation();
                               navigate(`/teacher/students/${student.id}`);

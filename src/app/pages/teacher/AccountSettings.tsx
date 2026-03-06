@@ -176,7 +176,7 @@ export default function AccountSettings() {
                 <AlertDialogTrigger asChild>
                   <Button
                     variant="outline"
-                    className="border-border-strong text-text-heading hover:bg-surface-page"
+                    className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                   >
                     Logout from All Devices
                   </Button>
@@ -191,7 +191,7 @@ export default function AccountSettings() {
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter>
-                    <AlertDialogCancel className="border-border-strong text-text-heading hover:bg-surface-page">
+                    <AlertDialogCancel className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page">
                       Cancel
                     </AlertDialogCancel>
                     <AlertDialogAction
@@ -212,7 +212,7 @@ export default function AccountSettings() {
             <AlertDialogTrigger asChild>
               <Button
                 variant="outline"
-                className="border-border-strong text-text-heading hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
               >
                 Logout
               </Button>
@@ -227,7 +227,7 @@ export default function AccountSettings() {
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
-                <AlertDialogCancel className="border-border-strong text-text-heading hover:bg-surface-page">
+                <AlertDialogCancel className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page">
                   Cancel
                 </AlertDialogCancel>
                 <AlertDialogAction

@@ -80,7 +80,7 @@ export default function EscalationConfirmation() {
           <Button
             variant="outline"
             onClick={() => navigate('/teacher/dashboard')}
-            className="border-border-strong text-text-heading hover:bg-surface-page"
+            className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
           >
             Return to Dashboard
           </Button>

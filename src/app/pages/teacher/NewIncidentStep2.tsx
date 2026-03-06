@@ -237,7 +237,7 @@ export default function NewIncidentStep2() {
           <Button
             variant="outline"
             onClick={handleBack}
-            className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+            className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
           >
             ← Back
           </Button>
@@ -245,7 +245,7 @@ export default function NewIncidentStep2() {
             <Button
               variant="outline"
               onClick={handleSaveDraft}
-              className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft rounded-lg"
+              className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page rounded-lg"
             >
               Save Draft
             </Button>

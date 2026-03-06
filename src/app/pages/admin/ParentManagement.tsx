@@ -168,8 +168,8 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Total Parents</p>
                 <p className="text-2xl font-bold text-text-heading">{parents.length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                <Users className="h-5 w-5 text-brand" />
+              <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <Users className="h-5 w-5 text-icon-person" />
               </div>
             </div>
           </Card>
@@ -201,8 +201,8 @@ export default function ParentManagement() {
                 <p className="text-sm text-text-body">Active</p>
                 <p className="text-2xl font-bold text-text-heading">{parents.filter(p => p.status === 'Active').length}</p>
               </div>
-              <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center">
-                <UserCheck className="h-5 w-5 text-brand" />
+              <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center">
+                <UserCheck className="h-5 w-5 text-icon-person" />
               </div>
             </div>
           </Card>
@@ -245,7 +245,7 @@ export default function ParentManagement() {
               <Button
                 variant="outline"
                 onClick={() => navigate('/admin/parents/bulk-link')}
-                className="border-brand-dark/40 text-brand-dark hover:bg-status-info-soft"
+                className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
               >
                 <Link2 className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Bulk Link</span>
@@ -267,8 +267,8 @@ export default function ParentManagement() {
             <div key={parent.id} className="bg-surface-card border border-border-default rounded-lg p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 rounded-full bg-status-info-soft flex items-center justify-center flex-shrink-0">
-                    <User className="w-5 h-5 text-brand" />
+                  <div className="w-10 h-10 rounded-full bg-icon-person-soft flex items-center justify-center flex-shrink-0">
+                    <User className="w-5 h-5 text-icon-person" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-heading">{parent.name}</h3>

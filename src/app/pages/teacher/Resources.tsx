@@ -108,14 +108,14 @@ export default function Resources() {
   const getTypeIcon = (type: Resource['type']) => {
     switch (type) {
       case 'guide':
-        return <BookOpen className="w-4 h-4 text-brand" />;
+        return <BookOpen className="w-4 h-4 text-icon-general" />;
       case 'video':
-        return <Video className="w-4 h-4 text-brand" />;
+        return <Video className="w-4 h-4 text-icon-general" />;
       case 'template':
       case 'checklist':
-        return <FileText className="w-4 h-4 text-brand" />;
+        return <FileText className="w-4 h-4 text-icon-general" />;
       default:
-        return <FileText className="w-4 h-4 text-brand" />;
+        return <FileText className="w-4 h-4 text-icon-general" />;
     }
   };
 
@@ -190,7 +190,7 @@ export default function Resources() {
               <Card key={resource.id} className="border-border-default hover:border-border-strong transition-colors">
                 <CardHeader>
                   <div className="flex items-start gap-3">
-                    <div className="p-2 bg-status-info-soft rounded border border-border-light">
+                    <div className="p-2 bg-icon-general-soft rounded border border-border-light">
                       {getTypeIcon(resource.type)}
                     </div>
                     <div className="flex-1">
@@ -225,7 +225,7 @@ export default function Resources() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-border-strong text-text-heading hover:bg-surface-page"
+                        className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                       >
                         <Download className="w-3 h-3 mr-1" />
                         Download
@@ -235,7 +235,7 @@ export default function Resources() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-border-strong text-text-heading hover:bg-surface-page"
+                        className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
                       >
                         <ExternalLink className="w-3 h-3 mr-1" />
                         Watch
