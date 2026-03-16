@@ -43,7 +43,7 @@ export default function PortalSelector() {
         {/* Header with Logo */}
         <div className="text-center mb-12">
           <img
-            src="/logos/png-transparent/1.png"
+            src="/logos/png-transparent/2.png"
             alt="BehaveBridge"
             className="w-28 h-28 mx-auto mb-4"
           />
