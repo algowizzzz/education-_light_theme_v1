@@ -40,7 +40,7 @@ export default function Notifications() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-6 max-w-4xl mx-auto">
         <div className="mb-6">
           <h1 className="text-2xl text-text-heading mb-2">Notifications</h1>
         </div>
