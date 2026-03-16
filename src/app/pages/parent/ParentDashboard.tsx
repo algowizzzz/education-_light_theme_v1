@@ -98,7 +98,7 @@ export default function ParentDashboard() {
                 <div
                   key={caseItem.id}
                   className={`p-4 border rounded-lg hover:bg-surface-page cursor-pointer transition-colors ${
-                    !caseItem.parentAcknowledged ? 'border-brand-dark bg-surface-hover' : 'border-border-light'
+                    !caseItem.parentAcknowledged ? 'border-brand-dark' : 'border-border-light'
                   }`}
                   onClick={() => navigate(`/parent/children/${marcusChild.id}/cases/${caseItem.id}`)}
                 >
@@ -147,7 +147,7 @@ export default function ParentDashboard() {
                 <div
                   key={caseItem.id}
                   className={`p-4 border rounded-lg hover:bg-surface-page cursor-pointer transition-colors ${
-                    !caseItem.parentAcknowledged ? 'border-brand-dark bg-surface-hover' : 'border-border-light'
+                    !caseItem.parentAcknowledged ? 'border-brand-dark' : 'border-border-light'
                   }`}
                   onClick={() => navigate(`/parent/children/${emmaChild.id}/cases/${caseItem.id}`)}
                 >

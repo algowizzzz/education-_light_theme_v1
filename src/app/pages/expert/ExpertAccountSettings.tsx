@@ -4,8 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/app/components/ui/ca
 import { Button } from '@/app/components/ui/button';
 import { Input } from '@/app/components/ui/input';
 import { Label } from '@/app/components/ui/label';
+import { Separator } from '@/app/components/ui/separator';
 import { toast } from 'sonner';
-import { User, Mail, Phone, GraduationCap, Award } from 'lucide-react';
+import { User, Mail, Phone, GraduationCap, Award, Lock } from 'lucide-react';
 
 export default function ExpertAccountSettings() {
   const [profileData] = useState({
@@ -35,88 +36,92 @@ export default function ExpertAccountSettings() {
       return;
     }
     toast.success('Password changed successfully');
-    setPasswordData({
-      currentPassword: '',
-      newPassword: '',
-      confirmPassword: '',
-    });
+    setPasswordData({ currentPassword: '', newPassword: '', confirmPassword: '' });
   };
 
   return (
     <ExpertLayout>
-      <div className="max-w-4xl">
-        <h1 className="text-2xl text-text-heading mb-6">Account Settings</h1>
+      <div className="max-w-4xl mx-auto p-6">
+        <div className="mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold text-text-heading mb-1">Account Settings</h1>
+          <p className="text-sm md:text-base text-text-body">Manage your profile and security settings</p>
+        </div>
 
         {/* Profile Information */}
         <Card className="mb-6 border-border-default">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-text-heading">
+          <CardHeader className="bg-brand rounded-t-lg">
+            <CardTitle className="flex items-center gap-2 text-white">
               <User className="w-5 h-5" />
               Profile Information
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="pt-6 space-y-4">
             <div className="grid grid-cols-3 gap-4">
               <div>
-                <Label className="text-text-label">Title</Label>
-                <p className="mt-2 text-text-heading">{profileData.title}</p>
+                <Label className="text-xs text-text-muted uppercase tracking-wide">Title</Label>
+                <p className="mt-1 text-text-heading font-medium">{profileData.title}</p>
               </div>
               <div>
-                <Label className="text-text-label">First Name</Label>
-                <p className="mt-2 text-text-heading">{profileData.firstName}</p>
+                <Label className="text-xs text-text-muted uppercase tracking-wide">First Name</Label>
+                <p className="mt-1 text-text-heading font-medium">{profileData.firstName}</p>
               </div>
               <div>
-                <Label className="text-text-label">Last Name</Label>
-                <p className="mt-2 text-text-heading">{profileData.lastName}</p>
+                <Label className="text-xs text-text-muted uppercase tracking-wide">Last Name</Label>
+                <p className="mt-1 text-text-heading font-medium">{profileData.lastName}</p>
               </div>
             </div>
+
+            <Separator />
 
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Label className="text-text-label flex items-center gap-2">
-                  <Mail className="w-4 h-4" />
-                  Email
+                <Label className="text-xs text-text-muted uppercase tracking-wide flex items-center gap-1.5">
+                  <Mail className="w-3.5 h-3.5 text-brand" /> Email
                 </Label>
-                <p className="mt-2 text-text-heading">{profileData.email}</p>
+                <p className="mt-1 text-text-heading font-medium">{profileData.email}</p>
               </div>
               <div>
-                <Label className="text-text-label flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  Phone
+                <Label className="text-xs text-text-muted uppercase tracking-wide flex items-center gap-1.5">
+                  <Phone className="w-3.5 h-3.5 text-brand" /> Phone
                 </Label>
-                <p className="mt-2 text-text-heading">{profileData.phone}</p>
+                <p className="mt-1 text-text-heading font-medium">{profileData.phone}</p>
               </div>
             </div>
 
+            <Separator />
+
             <div>
-              <Label className="text-text-label flex items-center gap-2">
-                <Award className="w-4 h-4" />
-                Credentials & Certifications
+              <Label className="text-xs text-text-muted uppercase tracking-wide flex items-center gap-1.5">
+                <Award className="w-3.5 h-3.5 text-brand" /> Credentials & Certifications
               </Label>
-              <p className="mt-2 text-text-heading">{profileData.credentials}</p>
+              <p className="mt-1 text-text-heading font-medium">{profileData.credentials}</p>
             </div>
 
             <div>
-              <Label className="text-text-label flex items-center gap-2">
-                <GraduationCap className="w-4 h-4" />
-                Areas of Specialization
+              <Label className="text-xs text-text-muted uppercase tracking-wide flex items-center gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-brand" /> Areas of Specialization
               </Label>
-              <p className="mt-2 text-text-heading">{profileData.specializations}</p>
+              <p className="mt-1 text-text-heading font-medium">{profileData.specializations}</p>
             </div>
 
+            <Separator />
+
             <div>
-              <Label className="text-text-label">Professional Bio</Label>
-              <p className="mt-2 text-text-heading leading-relaxed">{profileData.bio}</p>
+              <Label className="text-xs text-text-muted uppercase tracking-wide">Professional Bio</Label>
+              <p className="mt-1 text-text-heading leading-relaxed">{profileData.bio}</p>
             </div>
           </CardContent>
         </Card>
 
         {/* Password & Security */}
         <Card className="border-border-default">
-          <CardHeader>
-            <CardTitle className="text-text-heading">Password & Security</CardTitle>
+          <CardHeader className="bg-brand rounded-t-lg">
+            <CardTitle className="flex items-center gap-2 text-white">
+              <Lock className="w-5 h-5" />
+              Password & Security
+            </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="pt-6 space-y-4">
             <div>
               <Label htmlFor="currentPassword" className="text-text-label">Current Password</Label>
               <Input
@@ -124,10 +129,9 @@ export default function ExpertAccountSettings() {
                 type="password"
                 value={passwordData.currentPassword}
                 onChange={(e) => setPasswordData({ ...passwordData, currentPassword: e.target.value })}
-                className="border-border-default text-text-heading"
+                className="mt-2"
               />
             </div>
-
             <div>
               <Label htmlFor="newPassword" className="text-text-label">New Password</Label>
               <Input
@@ -135,10 +139,9 @@ export default function ExpertAccountSettings() {
                 type="password"
                 value={passwordData.newPassword}
                 onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })}
-                className="border-border-default text-text-heading"
+                className="mt-2"
               />
             </div>
-
             <div>
               <Label htmlFor="confirmPassword" className="text-text-label">Confirm New Password</Label>
               <Input
@@ -146,15 +149,10 @@ export default function ExpertAccountSettings() {
                 type="password"
                 value={passwordData.confirmPassword}
                 onChange={(e) => setPasswordData({ ...passwordData, confirmPassword: e.target.value })}
-                className="border-border-default text-text-heading"
+                className="mt-2"
               />
             </div>
-
-            <Button
-              onClick={handleChangePassword}
-              variant="outline"
-              className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
-            >
+            <Button onClick={handleChangePassword} className="bg-brand hover:bg-brand-dark text-white">
               Change Password
             </Button>
           </CardContent>

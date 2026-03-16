@@ -77,8 +77,8 @@ export default function ParentNotifications() {
           {notifications.map((notification) => (
             <Card
               key={notification.id}
-              className={`border-border-default cursor-pointer transition-colors hover:bg-surface-page ${
-                !notification.isRead ? 'bg-surface-hover' : ''
+              className={`cursor-pointer transition-colors hover:bg-surface-page ${
+                !notification.isRead ? 'border-l-4 border-l-brand border-border-default' : 'border-border-default'
               }`}
               onClick={() => markAsRead(notification.id)}
             >

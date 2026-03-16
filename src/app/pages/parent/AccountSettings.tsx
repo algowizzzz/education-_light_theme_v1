@@ -52,8 +52,8 @@ export default function ParentAccountSettings() {
 
         {/* Account Information (Read-Only) */}
         <Card className="mb-6 border-border-default">
-          <CardHeader className="bg-surface-page">
-            <CardTitle className="flex items-center gap-2">
+          <CardHeader className="bg-brand rounded-t-lg">
+            <CardTitle className="flex items-center gap-2 text-white">
               <User className="h-5 w-5" />
               Account Information
             </CardTitle>
@@ -97,8 +97,8 @@ export default function ParentAccountSettings() {
 
         {/* Update Contact Information */}
         <Card className="mb-6 border-border-default">
-          <CardHeader className="bg-surface-page">
-            <CardTitle className="flex items-center gap-2">
+          <CardHeader className="bg-brand rounded-t-lg">
+            <CardTitle className="flex items-center gap-2 text-white">
               <Mail className="h-5 w-5" />
               Contact Information
             </CardTitle>
@@ -140,8 +140,8 @@ export default function ParentAccountSettings() {
 
         {/* Change Password */}
         <Card className="mb-6 border-border-default">
-          <CardHeader className="bg-surface-page">
-            <CardTitle className="flex items-center gap-2">
+          <CardHeader className="bg-brand rounded-t-lg">
+            <CardTitle className="flex items-center gap-2 text-white">
               <Lock className="h-5 w-5" />
               Change Password
             </CardTitle>

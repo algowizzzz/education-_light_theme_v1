@@ -49,8 +49,8 @@ export default function Notifications() {
           {notifications.map((notification) => (
             <Card
               key={notification.id}
-              className={`border-border-default cursor-pointer hover:bg-table-row-hover transition-colors ${
-                !notification.read ? 'bg-surface-page' : 'bg-surface-card'
+              className={`cursor-pointer hover:bg-table-row-hover transition-colors ${
+                !notification.read ? 'border-l-4 border-l-brand border-border-default' : 'border-border-default'
               }`}
             >
               <CardContent className="p-4">

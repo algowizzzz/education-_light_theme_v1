@@ -38,7 +38,7 @@ export default function ExpertNotifications() {
 
   return (
     <ExpertLayout>
-      <div className="max-w-4xl">
+      <div className="max-w-4xl mx-auto p-6">
         <div className="mb-6">
           <h1 className="text-2xl text-text-heading mb-2">Notifications</h1>
         </div>
@@ -55,7 +55,7 @@ export default function ExpertNotifications() {
             notifications.map((notification) => (
               <Card
                 key={notification.id}
-                className="border-border-default bg-surface-page"
+                className="border-l-4 border-l-brand border-border-default bg-surface-card"
               >
                 <CardContent className="p-4">
                   <div className="flex items-start gap-3">

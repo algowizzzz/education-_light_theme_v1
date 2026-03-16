@@ -70,35 +70,27 @@ export function AdminAccountSettings() {
         </div>
 
         {/* Profile Hero Card */}
-        <Card className="bg-surface-card border border-surface-card-border overflow-hidden mb-6">
-          <div className="relative">
-            {/* Accent stripe */}
-            <div className="h-24 bg-gradient-to-r from-brand-dark via-brand to-brand-light" />
-            <CardContent className="relative -mt-10 px-6 pb-6">
-              <div className="flex flex-col md:flex-row md:items-end gap-4">
-                {/* Avatar */}
-                <div className="w-20 h-20 rounded-full bg-icon-person-soft border-4 border-surface-card flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <User className="w-10 h-10 text-icon-person" />
+        <Card className="bg-surface-card border border-surface-card-border mb-6">
+          <CardContent className="px-6 py-5">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+              <div>
+                <h2 className="text-xl font-bold text-text-heading">{adminInfo.name}</h2>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1.5">
+                  <span className="inline-flex items-center text-sm text-text-label">
+                    <IdCard className="w-3.5 h-3.5 mr-1.5 text-brand" />
+                    {adminInfo.adminId}
+                  </span>
+                  <span className="inline-flex items-center text-sm text-text-label">
+                    <Mail className="w-3.5 h-3.5 mr-1.5 text-brand" />
+                    {adminInfo.email}
+                  </span>
                 </div>
-                <div className="flex-1 pt-2 md:pt-10">
-                  <h2 className="text-xl font-bold text-text-heading">{adminInfo.name}</h2>
-                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
-                    <span className="inline-flex items-center text-sm text-text-label">
-                      <IdCard className="w-3.5 h-3.5 mr-1.5 text-brand" />
-                      {adminInfo.adminId}
-                    </span>
-                    <span className="inline-flex items-center text-sm text-text-label">
-                      <Mail className="w-3.5 h-3.5 mr-1.5 text-brand" />
-                      {adminInfo.email}
-                    </span>
-                  </div>
-                </div>
-                <span className="inline-flex items-center self-start md:self-end px-3 py-1 bg-brand/10 border border-brand/20 rounded-full text-xs font-medium text-brand-dark">
-                  {adminInfo.role}
-                </span>
               </div>
-            </CardContent>
-          </div>
+              <span className="inline-flex items-center self-start md:self-center px-3 py-1 bg-brand/10 border border-brand/20 rounded-full text-xs font-medium text-brand-dark">
+                {adminInfo.role}
+              </span>
+            </div>
+          </CardContent>
         </Card>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -203,9 +195,8 @@ export function AdminAccountSettings() {
                   </div>
                   <Button
                     onClick={() => setShowPasswordDialog(true)}
-                    variant="outline"
                     size="sm"
-                    className="w-full gap-2"
+                    className="w-full gap-2 bg-brand hover:bg-brand-dark text-white"
                   >
                     <Key className="w-3.5 h-3.5" />
                     Change Password
@@ -224,9 +215,8 @@ export function AdminAccountSettings() {
                   </div>
                   <Button
                     onClick={() => setShowLogoutAllDialog(true)}
-                    variant="outline"
                     size="sm"
-                    className="w-full"
+                    className="w-full bg-brand hover:bg-brand-dark text-white"
                   >
                     Logout All Devices
                   </Button>
@@ -250,7 +240,7 @@ export function AdminAccountSettings() {
                   onClick={() => setShowLogoutDialog(true)}
                   variant="outline"
                   size="sm"
-                  className="w-full gap-2 border-status-error/30 text-status-error hover:bg-status-error-soft"
+                  className="w-full gap-2 bg-brand hover:bg-brand-dark text-white"
                 >
                   <LogOut className="w-3.5 h-3.5" />
                   Logout
