@@ -51,36 +51,32 @@ export function TeacherLayout({ children }: TeacherLayoutProps) {
     <div className="min-h-screen flex">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 bg-sidebar shadow-lg transition-all duration-300 ${
+        className={`fixed inset-y-0 left-0 z-50 bg-sidebar transition-all duration-300 ${
           sidebarOpen ? 'w-[280px]' : 'w-[72px]'
         } md:block hidden`}
       >
         <div className="h-full flex flex-col">
           {/* Logo & Toggle */}
           <div className="p-6 border-b border-white/15 flex-shrink-0">
-            <div className="flex items-center justify-between">
-              {sidebarOpen && (
+            {sidebarOpen ? (
+              <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="bg-white rounded-lg p-1">
                     <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-8 h-8" />
                   </div>
-                  <h1 className="font-bold text-xl text-white">
-                    BehaveBridge
-                  </h1>
+                  <h1 className="font-bold text-xl text-white">BehaveBridge</h1>
                 </div>
-              )}
-              {!sidebarOpen && (
-                <div className="bg-white rounded-lg p-1 mx-auto">
-                  <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-8 h-8" />
-                </div>
-              )}
-              <button
-                onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="text-white/70 hover:text-white"
-              >
-                <Menu className="w-5 h-5" />
-              </button>
-            </div>
+                <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-white/70 hover:text-white">
+                  <Menu className="w-5 h-5" />
+                </button>
+              </div>
+            ) : (
+              <div className="flex justify-center">
+                <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-white/70 hover:text-white">
+                  <Menu className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
 
           {/* User Profile - Top, Non-clickable */}
