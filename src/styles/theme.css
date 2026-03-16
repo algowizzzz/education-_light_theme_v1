@@ -59,8 +59,8 @@
   /* --- Text hierarchy --- */
   --text-heading: #1B67AB;
   --text-label: #1B67AB;
-  --text-body: #34B7EF;
-  --text-muted: #51C1F0;
+  --text-body: #1478B0;
+  --text-muted: #1B8FC4;
   --text-inverse: #FEFEFE;
 
   /* --- Surfaces (4-tier depth) --- */
@@ -157,8 +157,8 @@
   --sidebar-ring: #34B7EF;
   --text-heading: #1B67AB;
   --text-label: #1B67AB;
-  --text-body: #34B7EF;
-  --text-muted: #51C1F0;
+  --text-body: #1478B0;
+  --text-muted: #1B8FC4;
   --surface-page: #ACD2E7;
   --surface-card: #FEFEFE;
   --surface-hover: #ACD2E7;

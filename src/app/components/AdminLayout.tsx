@@ -49,33 +49,38 @@ export function AdminLayout({ children }: AdminLayoutProps) {
     <div className="min-h-screen flex">
       {/* Desktop Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 bg-sidebar transition-all duration-300 shadow-lg ${
+        className={`fixed inset-y-0 left-0 z-50 bg-sidebar transition-all duration-300 ${
           sidebarOpen ? 'w-[280px]' : 'w-[72px]'
         } md:block hidden`}
       >
         <div className="h-full flex flex-col">
           {/* Logo & Toggle */}
           <div className="p-5 border-b border-sidebar-border flex-shrink-0">
-            <div className="flex items-center justify-between">
-              {sidebarOpen ? (
+            {sidebarOpen ? (
+              <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="bg-white rounded-lg p-1">
                     <img src="/logos/png-transparent/2.png" alt="BehaveBridge" className="w-8 h-8" />
                   </div>
                   <span className="font-bold text-lg text-white tracking-tight">BehaveBridge</span>
                 </div>
-              ) : (
-                <div className="bg-white rounded-lg p-1 mx-auto">
-                  <img src="/logos/png-transparent/2.png" alt="BB" className="w-8 h-8" />
-                </div>
-              )}
-              <button
-                onClick={() => setSidebarOpen(!sidebarOpen)}
-                className="text-white/70 hover:text-white ml-2"
-              >
-                <Menu className="w-5 h-5" />
-              </button>
-            </div>
+                <button
+                  onClick={() => setSidebarOpen(!sidebarOpen)}
+                  className="text-white/70 hover:text-white ml-2"
+                >
+                  <Menu className="w-5 h-5" />
+                </button>
+              </div>
+            ) : (
+              <div className="flex justify-center">
+                <button
+                  onClick={() => setSidebarOpen(!sidebarOpen)}
+                  className="text-white/70 hover:text-white"
+                >
+                  <Menu className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
 
           {/* User Profile */}
@@ -106,7 +111,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   onClick={() => navigate(item.path)}
                   className={`flex items-center w-full rounded-lg transition-all duration-200 ${
                     isActive
-                      ? 'bg-white/20 text-white shadow-sm border-l-3 border-white'
+                      ? `bg-white/20 text-white shadow-sm ${sidebarOpen ? 'border-l-3 border-white' : ''}`
                       : 'text-white/70 hover:bg-white/10 hover:text-white'
                   } ${sidebarOpen ? 'px-4 py-2.5' : 'py-3 justify-center'}`}
                 >
