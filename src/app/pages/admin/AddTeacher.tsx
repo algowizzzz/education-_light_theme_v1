@@ -83,7 +83,7 @@ export default function AddTeacher() {
               <CardTitle>Account Information</CardTitle>
             </CardHeader>
             <CardContent className="pt-6">
-              <div className="grid grid-cols-2 gap-4 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <Label htmlFor="firstName">First Name *</Label>
                   <Input
@@ -173,7 +173,7 @@ export default function AddTeacher() {
               <div className="mb-4">
                 <Label>Grade Levels *</Label>
                 <p className="text-xs text-text-body mb-2">Select all grades this teacher will work with</p>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {gradeOptions.map((grade) => (
                     <div key={grade} className="flex items-center space-x-2">
                       <Checkbox
@@ -192,7 +192,7 @@ export default function AddTeacher() {
               <div>
                 <Label>Class Periods</Label>
                 <p className="text-xs text-text-body mb-2">Select teaching schedule</p>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {periodOptions.map((period) => (
                     <div key={period} className="flex items-center space-x-2">
                       <Checkbox

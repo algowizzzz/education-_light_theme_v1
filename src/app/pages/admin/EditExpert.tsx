@@ -71,7 +71,7 @@ export default function EditExpert() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div>
                 <div className="text-sm text-text-body mb-1">Active Cases</div>
                 <div className="text-2xl font-semibold text-text-heading">
@@ -116,7 +116,7 @@ export default function EditExpert() {
                 />
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
                   <Label htmlFor="title" className="text-text-label">Title</Label>
                   <select
@@ -153,7 +153,7 @@ export default function EditExpert() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="email" className="text-text-label">Email *</Label>
                   <Input
@@ -217,7 +217,7 @@ export default function EditExpert() {
             </CardContent>
           </Card>
 
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-3">
             <div className="flex gap-3">
               <Button
                 type="submit"

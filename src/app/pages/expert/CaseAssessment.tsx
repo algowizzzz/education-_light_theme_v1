@@ -70,7 +70,7 @@ export default function CaseAssessment() {
             <CardTitle className="text-base">Case Summary</CardTitle>
           </CardHeader>
           <CardContent className="pt-4">
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div>
                 <p className="text-text-body">Student</p>
                 <p className="text-text-heading">{caseData.student} (ID: {caseData.studentId})</p>
@@ -297,7 +297,7 @@ export default function CaseAssessment() {
               {profileUpdates.addTrigger && (
                 <div>
                   <h4 className="text-sm mb-2">Triggers</h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <p className="text-xs text-text-body mb-2">Current</p>
                       <div className="space-y-1">
@@ -324,7 +324,7 @@ export default function CaseAssessment() {
               {profileUpdates.updateStrategy && (
                 <div>
                   <h4 className="text-sm mb-2">Strategy Priority</h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <p className="text-xs text-text-body mb-2">Current</p>
                       <div className="space-y-1">

@@ -74,7 +74,7 @@ export default function ParentAccountSettings() {
                 </div>
               </div>
               <Separator />
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label className="text-sm text-text-body">Account Created</Label>
                   <p className="text-sm text-text-heading mt-1">{accountInfo.accountCreated}</p>

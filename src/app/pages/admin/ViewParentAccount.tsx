@@ -247,7 +247,7 @@ export default function ViewParentAccount() {
         {/* Activity Summary */}
         <Card className="border-border-default p-6 mb-6">
           <h2 className="text-lg font-medium text-text-heading mb-4">Activity Summary</h2>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-4 bg-surface-page rounded-lg">
               <p className="text-3xl font-medium text-text-heading mb-1">{parent.incidentsViewed}</p>
               <p className="text-sm text-text-body">Incidents Viewed</p>

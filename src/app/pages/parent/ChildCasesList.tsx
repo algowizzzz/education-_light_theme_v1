@@ -131,7 +131,7 @@ export default function ChildCasesList() {
 
   return (
     <ParentLayout>
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <Link 
           to={`/parent/children/${id}`}
           className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6"

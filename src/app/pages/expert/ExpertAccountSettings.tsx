@@ -56,7 +56,7 @@ export default function ExpertAccountSettings() {
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-6 space-y-4">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <Label className="text-xs text-text-muted uppercase tracking-wide">Title</Label>
                 <p className="mt-1 text-text-heading font-medium">{profileData.title}</p>
@@ -73,7 +73,7 @@ export default function ExpertAccountSettings() {
 
             <Separator />
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <Label className="text-xs text-text-muted uppercase tracking-wide flex items-center gap-1.5">
                   <Mail className="w-3.5 h-3.5 text-brand" /> Email

@@ -78,7 +78,7 @@ export default function EditStudent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div>
                 <div className="text-sm text-text-body mb-1">Total Incidents</div>
                 <div className="text-2xl font-semibold text-text-heading">
@@ -123,7 +123,7 @@ export default function EditStudent() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="firstName" className="text-text-label">First Name *</Label>
                   <Input
@@ -146,7 +146,7 @@ export default function EditStudent() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="dateOfBirth" className="text-text-label">Date of Birth *</Label>
                   <Input
@@ -226,7 +226,7 @@ export default function EditStudent() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="guardianEmail" className="text-text-label">Guardian Email *</Label>
                   <Input
@@ -251,7 +251,7 @@ export default function EditStudent() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="emergencyContact" className="text-text-label">Emergency Contact Name</Label>
                   <Input
@@ -280,7 +280,7 @@ export default function EditStudent() {
               <CardTitle className="text-text-heading">Special Education & Medical</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="iepStatus" className="text-text-label">IEP Status</Label>
                   <select
@@ -321,7 +321,7 @@ export default function EditStudent() {
             </CardContent>
           </Card>
 
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-3">
             <div className="flex gap-3">
               <Button
                 type="submit"

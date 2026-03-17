@@ -155,7 +155,7 @@ export default function ViewStudent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4 mb-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
               <div>
                 <div className="text-sm text-text-body mb-1">Total Incidents</div>
                 <div className="text-2xl font-semibold text-text-heading">
@@ -205,7 +205,7 @@ export default function ViewStudent() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Student Information */}
           <Card className="border-border-default">
             <CardHeader>

@@ -45,7 +45,7 @@ export default function ParentIncidentDetail() {
 
   return (
     <ParentLayout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-4 md:p-8 max-w-4xl">
         <Link to={`/parent/children/${childId}`} className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Profile
@@ -67,7 +67,7 @@ export default function ParentIncidentDetail() {
             <CardTitle className="text-lg text-text-heading">What Happened</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-4 mb-4 pb-4 border-b border-border-light">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 pb-4 border-b border-border-light">
               <div>
                 <div className="text-sm text-text-body mb-1">Date & Time</div>
                 <div className="text-text-heading">{incident.date} at {incident.time}</div>

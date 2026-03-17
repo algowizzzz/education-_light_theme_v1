@@ -132,41 +132,67 @@ export function ActiveUsers() {
             </div>
           </CardHeader>
           <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow className="border-border-default">
-                  <TableHead className="text-text-heading">Name</TableHead>
-                  <TableHead className="text-text-heading">Role</TableHead>
-                  <TableHead className="text-text-heading">Email</TableHead>
-                  <TableHead className="text-text-heading">Last Login</TableHead>
-                  <TableHead className="text-text-heading">Status</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {recentlyLoggedIn.map((user, index) => (
-                  <TableRow key={index} className="border-border-default">
-                    <TableCell className="font-medium text-text-heading">
-                      {user.name}
-                    </TableCell>
-                    <TableCell className="text-text-label">{user.role}</TableCell>
-                    <TableCell className="text-text-label">{user.email}</TableCell>
-                    <TableCell className="text-text-label">{user.lastLogin}</TableCell>
-                    <TableCell>
-                      <Badge
-                        variant="outline"
-                        className={
-                          user.status === 'online'
-                            ? 'bg-brand-dark text-white border-brand-dark'
-                            : 'bg-surface-page text-text-body border-border-default'
-                        }
-                      >
-                        {user.status === 'online' ? 'Online' : 'Offline'}
-                      </Badge>
-                    </TableCell>
+            {/* Mobile Card View */}
+            <div className="md:hidden space-y-3">
+              {recentlyLoggedIn.map((user, index) => (
+                <div key={index} className="flex items-center justify-between p-3 bg-surface-page rounded-lg">
+                  <div>
+                    <p className="font-medium text-text-heading">{user.name}</p>
+                    <p className="text-sm text-text-label">{user.role}</p>
+                    <p className="text-xs text-text-body mt-1">{user.lastLogin}</p>
+                  </div>
+                  <Badge
+                    variant="outline"
+                    className={
+                      user.status === 'online'
+                        ? 'bg-brand-dark text-white border-brand-dark'
+                        : 'bg-surface-page text-text-body border-border-default'
+                    }
+                  >
+                    {user.status === 'online' ? 'Online' : 'Offline'}
+                  </Badge>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop Table View */}
+            <div className="hidden md:block">
+              <Table>
+                <TableHeader>
+                  <TableRow className="border-border-default">
+                    <TableHead className="text-text-heading">Name</TableHead>
+                    <TableHead className="text-text-heading">Role</TableHead>
+                    <TableHead className="text-text-heading">Email</TableHead>
+                    <TableHead className="text-text-heading">Last Login</TableHead>
+                    <TableHead className="text-text-heading">Status</TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {recentlyLoggedIn.map((user, index) => (
+                    <TableRow key={index} className="border-border-default">
+                      <TableCell className="font-medium text-text-heading">
+                        {user.name}
+                      </TableCell>
+                      <TableCell className="text-text-label">{user.role}</TableCell>
+                      <TableCell className="text-text-label">{user.email}</TableCell>
+                      <TableCell className="text-text-label">{user.lastLogin}</TableCell>
+                      <TableCell>
+                        <Badge
+                          variant="outline"
+                          className={
+                            user.status === 'online'
+                              ? 'bg-brand-dark text-white border-brand-dark'
+                              : 'bg-surface-page text-text-body border-border-default'
+                          }
+                        >
+                          {user.status === 'online' ? 'Online' : 'Offline'}
+                        </Badge>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
           </CardContent>
         </Card>
 

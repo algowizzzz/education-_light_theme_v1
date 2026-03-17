@@ -7,7 +7,7 @@ import { ArrowLeft, AlertCircle, Phone, Mail } from 'lucide-react';
 export function NoExpertAssigned() {
   return (
     <ParentLayout>
-      <div className="p-8 max-w-4xl mx-auto">
+      <div className="p-4 md:p-8 max-w-4xl mx-auto">
         <Link
           to="/parent/dashboard"
           className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6"

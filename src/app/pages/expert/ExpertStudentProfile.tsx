@@ -32,7 +32,7 @@ export default function ExpertStudentProfile() {
 
   return (
     <ExpertLayout>
-      <div className="p-8 max-w-6xl">
+      <div className="p-4 md:p-8 max-w-6xl">
         <Link to="/expert/students" className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to All Students
@@ -59,7 +59,7 @@ export default function ExpertStudentProfile() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-text-heading">Parent Contact Information</CardTitle>
@@ -74,7 +74,7 @@ export default function ExpertStudentProfile() {
                   <div className="text-sm text-text-body mb-1">Secondary Contact</div>
                   <div className="text-text-heading">{parentInfo.secondary}</div>
                 </div>
-                <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                   <div>
                     <div className="text-sm text-text-body mb-1">Email</div>
                     <div className="text-text-heading text-sm">{parentInfo.email}</div>
@@ -93,7 +93,7 @@ export default function ExpertStudentProfile() {
               <CardTitle className="text-lg text-text-heading">Behavior Summary</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <div className="text-2xl text-text-heading font-bold mb-1">
                     {behaviorSummary.totalIncidents}

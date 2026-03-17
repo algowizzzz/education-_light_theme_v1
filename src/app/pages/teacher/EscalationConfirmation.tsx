@@ -15,7 +15,7 @@ export default function EscalationConfirmation() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-3xl mx-auto">
+      <div className="p-4 md:p-8 max-w-3xl mx-auto">
         <div className="flex flex-col items-center text-center mb-8">
           <div className="w-16 h-16 rounded-full bg-status-success-soft flex items-center justify-center mb-4">
             <CheckCircle2 className="w-10 h-10 text-status-success" />
@@ -26,7 +26,7 @@ export default function EscalationConfirmation() {
 
         <Card className="mb-6 border-border-default">
           <CardContent className="pt-6">
-            <div className="grid grid-cols-2 gap-4 mb-4 pb-4 border-b border-border-light">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 pb-4 border-b border-border-light">
               <div>
                 <div className="text-sm text-text-body mb-1">Escalation ID</div>
                 <div className="text-text-heading font-medium">{id}</div>
@@ -37,7 +37,7 @@ export default function EscalationConfirmation() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <div>
                 <div className="text-sm text-text-body mb-1">Linked Incident</div>
                 <div className="text-text-heading">{incidentId}</div>

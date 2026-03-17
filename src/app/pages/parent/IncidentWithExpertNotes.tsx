@@ -61,7 +61,7 @@ export function IncidentWithExpertNotes() {
 
   return (
     <ParentLayout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-4 md:p-8 max-w-4xl">
         <Link
           to={`/parent/children/${childId}`}
           className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6"
@@ -87,7 +87,7 @@ export function IncidentWithExpertNotes() {
               <CardTitle className="text-lg text-text-heading">What Happened</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-text-body" />
                   <div>

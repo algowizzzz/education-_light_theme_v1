@@ -11,7 +11,7 @@ export function NoIncidentsState() {
 
   return (
     <ParentLayout>
-      <div className="p-8 max-w-5xl">
+      <div className="p-4 md:p-8 max-w-5xl">
         <Link
           to="/parent/dashboard"
           className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6"
@@ -47,7 +47,7 @@ export function NoIncidentsState() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <Card className="border-border-default p-6">
             <div className="text-3xl text-text-heading font-bold mb-1">0</div>
             <div className="text-sm text-text-body">Incidents This Month</div>

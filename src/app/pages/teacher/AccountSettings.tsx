@@ -60,7 +60,7 @@ export default function AccountSettings() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-4 md:p-8 max-w-4xl">
         <div className="mb-6">
           <h1 className="text-2xl text-text-heading mb-2">Account Settings</h1>
           <p className="text-text-label">Manage your account information and security</p>
@@ -73,7 +73,7 @@ export default function AccountSettings() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label className="text-text-label text-sm mb-2 block">Full Name</Label>
                   <div className="p-3 bg-surface-page rounded-lg text-text-heading">

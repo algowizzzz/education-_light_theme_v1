@@ -66,7 +66,7 @@ export default function EscalationDetail() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-5xl">
+      <div className="p-4 md:p-8 max-w-5xl">
         <Link to="/teacher/escalations" className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Escalations
@@ -100,7 +100,7 @@ export default function EscalationDetail() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardContent className="pt-6">
               <div className="text-sm text-text-body mb-1">Submitted By</div>
@@ -141,7 +141,7 @@ export default function EscalationDetail() {
             <CardTitle className="text-lg text-text-heading">Incident Details</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <div className="text-sm text-text-body mb-1">Date & Time</div>
                 <div className="text-text-heading font-medium">{incidentDetails.date} at {incidentDetails.time}</div>
@@ -174,7 +174,7 @@ export default function EscalationDetail() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-text-heading">Antecedent Triggers</CardTitle>

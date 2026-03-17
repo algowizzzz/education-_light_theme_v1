@@ -127,7 +127,7 @@ export default function AssignParentToStudent() {
             <CardTitle className="text-lg">Student Information</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <Label className="text-sm text-text-body">Name</Label>
                 <p className="text-text-heading">{student.name}</p>

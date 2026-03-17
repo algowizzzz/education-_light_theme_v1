@@ -110,7 +110,7 @@ export default function ChildCaseDetail() {
 
   return (
     <ParentLayout>
-      <div className="p-8 max-w-5xl">
+      <div className="p-4 md:p-8 max-w-5xl">
         <Link 
           to={`/parent/children/${id}/cases`}
           className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6"
@@ -158,7 +158,7 @@ export default function ChildCaseDetail() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardContent className="pt-6">
               <div className="text-sm text-text-body mb-1">Teacher</div>
@@ -215,7 +215,7 @@ export default function ChildCaseDetail() {
             <CardTitle className="text-lg text-text-heading">Incident Details</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <div className="text-sm text-text-body mb-1">Date & Time</div>
                 <div className="text-text-heading font-medium">{incidentDetails.date} at {incidentDetails.time}</div>
@@ -248,7 +248,7 @@ export default function ChildCaseDetail() {
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-text-heading">Triggers Identified</CardTitle>

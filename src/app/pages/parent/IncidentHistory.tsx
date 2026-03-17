@@ -193,7 +193,7 @@ export default function IncidentHistory() {
         </div>
 
         {/* Summary Stats */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
           <Card className="border-border-default">
             <CardContent className="p-4">
               <div className="text-sm text-text-body mb-1">Total Incidents</div>

@@ -145,7 +145,7 @@ export default function TeacherManagement() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-3 gap-2 md:gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 mb-6">
           <Card className="bg-surface-card border border-surface-card-border p-4">
             <div className="flex items-center justify-between">
               <div>

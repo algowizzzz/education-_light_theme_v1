@@ -312,7 +312,7 @@ This incident represents the third math-related escalation this week, showing a 
   if (showAssessmentForm) {
     return (
       <ExpertLayout>
-        <div className="p-8 max-w-5xl">
+        <div className="p-4 md:p-8 max-w-5xl">
           <Link to={`/expert/cases/${id}`} className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Details
@@ -404,7 +404,7 @@ This incident represents the third math-related escalation this week, showing a 
 
   return (
     <ExpertLayout>
-      <div className="p-8 max-w-5xl">
+      <div className="p-4 md:p-8 max-w-5xl">
         <Link to="/expert/cases" className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Cases
@@ -438,7 +438,7 @@ This incident represents the third math-related escalation this week, showing a 
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardContent className="pt-6">
               <div className="text-sm text-text-body mb-1">Submitted By</div>
@@ -479,7 +479,7 @@ This incident represents the third math-related escalation this week, showing a 
             <CardTitle className="text-lg text-text-heading">Incident Details</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <div className="text-sm text-text-body mb-1">Date & Time</div>
                 <div className="text-text-heading font-medium">{incidentDetails.date} at {incidentDetails.time}</div>
@@ -512,7 +512,7 @@ This incident represents the third math-related escalation this week, showing a 
           </CardContent>
         </Card>
 
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <Card className="border-border-default">
             <CardHeader className="pb-4">
               <CardTitle className="text-lg text-text-heading">Antecedent Triggers</CardTitle>
@@ -574,9 +574,9 @@ This incident represents the third math-related escalation this week, showing a 
 
         <Card className="mb-6 border-border-default">
           <CardHeader className="pb-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
               <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-text-label" />
+                <Sparkles className="w-5 h-5 text-text-label flex-shrink-0" />
                 <div>
                   <CardTitle className="text-lg text-text-heading">AI Intervention Assistant</CardTitle>
                   <p className="text-sm text-text-body mt-1">PBIS-aligned recommendations and guidance</p>
@@ -585,7 +585,7 @@ This incident represents the third math-related escalation this week, showing a 
               <Button
                 onClick={handleGenerateRecommendations}
                 variant="outline"
-                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
+                className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page w-full md:w-auto"
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Generate Recommendations

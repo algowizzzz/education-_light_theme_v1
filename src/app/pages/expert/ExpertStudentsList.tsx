@@ -44,13 +44,13 @@ export default function ExpertStudentsList() {
 
   return (
     <ExpertLayout>
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="mb-6">
           <h1 className="text-2xl text-text-heading mb-2">All Students</h1>
           <p className="text-text-label">View and manage behavioral profiles for all assigned students</p>
         </div>
 
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-col md:flex-row gap-4 mb-6">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-body" />
             <Input
@@ -60,28 +60,30 @@ export default function ExpertStudentsList() {
               className="pl-10 border-border-default text-text-heading"
             />
           </div>
-          <Select value={gradeFilter} onValueChange={setGradeFilter}>
-            <SelectTrigger className="w-48 border-border-default text-text-heading">
-              <SelectValue placeholder="All Grades" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Grades</SelectItem>
-              <SelectItem value="2">Grade 2</SelectItem>
-              <SelectItem value="3">Grade 3</SelectItem>
-              <SelectItem value="4">Grade 4</SelectItem>
-              <SelectItem value="5">Grade 5</SelectItem>
-            </SelectContent>
-          </Select>
-          <Select value={caseFilter} onValueChange={setCaseFilter}>
-            <SelectTrigger className="w-48 border-border-default text-text-heading">
-              <SelectValue placeholder="All Cases" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Cases</SelectItem>
-              <SelectItem value="active">Has Active Case</SelectItem>
-              <SelectItem value="none">No Active Case</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex gap-2">
+            <Select value={gradeFilter} onValueChange={setGradeFilter}>
+              <SelectTrigger className="w-full md:w-48 border-border-default text-text-heading">
+                <SelectValue placeholder="All Grades" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Grades</SelectItem>
+                <SelectItem value="2">Grade 2</SelectItem>
+                <SelectItem value="3">Grade 3</SelectItem>
+                <SelectItem value="4">Grade 4</SelectItem>
+                <SelectItem value="5">Grade 5</SelectItem>
+              </SelectContent>
+            </Select>
+            <Select value={caseFilter} onValueChange={setCaseFilter}>
+              <SelectTrigger className="w-full md:w-48 border-border-default text-text-heading">
+                <SelectValue placeholder="All Cases" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Cases</SelectItem>
+                <SelectItem value="active">Has Active Case</SelectItem>
+                <SelectItem value="none">No Active Case</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         <div className="mb-4 text-sm text-text-body">
@@ -106,7 +108,44 @@ export default function ExpertStudentsList() {
             </div>
           </Card>
         ) : (
-          <div className="bg-surface-card border border-border-default rounded-lg overflow-hidden">
+          <>
+          {/* Mobile Card View */}
+          <div className="md:hidden space-y-3">
+            {filteredStudents.map((student) => (
+              <div key={student.id} className="bg-surface-card border border-border-default rounded-lg p-4">
+                <div className="flex items-start justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium text-text-heading">{student.name}</h3>
+                    <p className="text-sm text-text-body">{student.id} &middot; Grade {student.grade}</p>
+                  </div>
+                  {student.hasActiveCase && (
+                    <Badge className="bg-status-warning-soft text-status-warning border border-status-warning-border text-xs">Active Case</Badge>
+                  )}
+                </div>
+                <div className="flex items-center justify-between text-sm border-t border-border-light pt-3 mt-3">
+                  <div className="text-text-label">
+                    <span>{student.primaryTeacher}</span>
+                    <span className="mx-2">&middot;</span>
+                    <Badge variant="outline" className="border-border-strong text-text-label text-xs">
+                      {student.incidentCount} incidents
+                    </Badge>
+                  </div>
+                  <Link to={`/expert/students/${student.id}`}>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page"
+                    >
+                      View
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop Table View */}
+          <div className="hidden md:block bg-surface-card border border-border-default rounded-lg overflow-hidden">
             <table className="w-full">
               <thead>
                 <tr className="bg-table-header-bg">
@@ -159,6 +198,7 @@ export default function ExpertStudentsList() {
               </tbody>
             </table>
           </div>
+          </>
         )}
       </div>
     </ExpertLayout>

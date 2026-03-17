@@ -62,7 +62,7 @@ export default function PortalSelector() {
             return (
               <Card
                 key={portal.path}
-                className="group p-8 glass-card hover:shadow-xl hover:shadow-brand/10 hover:border-brand/20 transition-all duration-300 cursor-pointer rounded-xl"
+                className="group p-5 md:p-8 glass-card hover:shadow-xl hover:shadow-brand/10 hover:border-brand/20 transition-all duration-300 cursor-pointer rounded-xl"
                 onClick={() => navigate(portal.path)}
               >
                 <div className="flex flex-col items-center text-center space-y-4">

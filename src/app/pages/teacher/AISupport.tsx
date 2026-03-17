@@ -74,7 +74,7 @@ export default function AISupport() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-5xl">
+      <div className="p-4 md:p-8 max-w-5xl">
         <Link to={`/teacher/students/${id}`} className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Student Profile

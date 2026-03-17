@@ -48,7 +48,7 @@ export default function EscalationForm() {
 
   return (
     <TeacherLayout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-4 md:p-8 max-w-4xl">
         <Link to={`/teacher/incidents/${incidentId}`} className="inline-flex items-center gap-2 text-text-label hover:text-text-heading mb-6">
           <ArrowLeft className="w-4 h-4" />
           Back to Incident

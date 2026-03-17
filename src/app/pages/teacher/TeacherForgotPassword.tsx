@@ -21,7 +21,7 @@ export default function TeacherForgotPassword() {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="w-full max-w-md">
-          <Card className="p-8 border border-border-default bg-surface-card text-center">
+          <Card className="p-5 md:p-8 border border-border-default bg-surface-card text-center">
             <div className="w-16 h-16 rounded-full bg-status-success-soft flex items-center justify-center mx-auto mb-4">
               <svg
                 className="w-8 h-8 text-status-success"
@@ -79,7 +79,7 @@ export default function TeacherForgotPassword() {
           Back to Login
         </Link>
 
-        <Card className="p-8 border border-border-default bg-surface-card">
+        <Card className="p-5 md:p-8 border border-border-default bg-surface-card">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-text-heading mb-1">
               Forgot Password

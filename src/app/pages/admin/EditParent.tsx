@@ -96,7 +96,7 @@ export default function EditParent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div>
                 <div className="text-sm text-text-body mb-1">Total Incidents</div>
                 <div className="text-2xl font-semibold text-text-heading">
@@ -141,7 +141,7 @@ export default function EditParent() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="firstName" className="text-text-label">First Name *</Label>
                   <Input
@@ -164,7 +164,7 @@ export default function EditParent() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="relationship" className="text-text-label">Relationship to Student *</Label>
                   <select
@@ -203,7 +203,7 @@ export default function EditParent() {
               <CardTitle className="text-text-heading">Contact Information</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="email" className="text-text-label">Email *</Label>
                   <Input
@@ -238,7 +238,7 @@ export default function EditParent() {
                 />
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
                   <Label htmlFor="city" className="text-text-label">City</Label>
                   <Input
@@ -339,7 +339,7 @@ export default function EditParent() {
             </CardContent>
           </Card>
 
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-3">
             <div className="flex gap-3">
               <Button
                 type="submit"

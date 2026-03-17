@@ -182,7 +182,7 @@ export default function Resources() {
         {/* Search and Filters */}
         <Card className="mb-6 border-border-default">
           <CardContent className="p-4">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-text-body" />
                 <Input
@@ -232,7 +232,7 @@ export default function Resources() {
         </div>
 
         {/* Resources Grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {filteredResources.length === 0 ? (
             <div className="col-span-2">
               <Card className="border-border-default">

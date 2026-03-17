@@ -185,7 +185,7 @@ export function EditStudentProfile() {
                   <h3 className="text-sm font-medium text-text-heading mb-4">
                     Student Information (Read-only)
                   </h3>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="text-text-body">Name:</span>
                       <span className="ml-2 text-text-heading">{student.name}</span>

@@ -13,7 +13,7 @@ export default function IncidentConfirmation() {
   return (
     <TeacherLayout>
       <div className="max-w-4xl mx-auto space-y-6">
-        <Card className="p-8 border border-border-default bg-surface-card text-center space-y-6">
+        <Card className="p-5 md:p-8 border border-border-default bg-surface-card text-center space-y-6">
           <div className="w-16 h-16 rounded-full bg-status-success-soft flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-8 h-8 text-status-success" />
           </div>

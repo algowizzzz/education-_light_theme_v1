@@ -40,17 +40,17 @@ export default function AssignStudentsToTeacher() {
 
   return (
     <div className="min-h-screen">
-      <header className="bg-surface-card border-b border-border-default px-8 py-4 mb-8">
+      <header className="bg-surface-card border-b border-border-default px-4 md:px-8 py-4 mb-6 md:mb-8">
         <div>
           <Link to="/admin/teachers" className="text-text-label hover:text-text-heading text-sm mb-2 block">
             ← Back to Teacher Management
           </Link>
-          <h1 className="text-2xl text-text-heading">Assign Students to {teacherName}</h1>
+          <h1 className="text-xl md:text-2xl text-text-heading">Assign Students to {teacherName}</h1>
           <p className="text-sm text-text-body mt-1">Teacher ID: {id}</p>
         </div>
       </header>
 
-      <div className="px-8 pb-8 max-w-4xl">
+      <div className="px-4 md:px-8 pb-8 max-w-4xl">
         <Card className="border-border-default p-6 mb-6">
           <div className="flex items-center gap-3 mb-4">
             <CheckCircle2 className="w-5 h-5 text-text-heading" />
@@ -71,7 +71,36 @@ export default function AssignStudentsToTeacher() {
           />
         </div>
 
-        <div className="bg-surface-card border border-border-default rounded-lg overflow-hidden mb-6">
+        {/* Mobile Card View */}
+        <div className="md:hidden space-y-3 mb-6">
+          {filteredStudents.map((student) => {
+            const isSelected = selectedStudents.includes(student.id);
+            return (
+              <div
+                key={student.id}
+                className={`bg-surface-card border rounded-lg p-4 cursor-pointer ${
+                  isSelected ? 'border-brand bg-surface-elevated' : 'border-border-default'
+                }`}
+                onClick={() => toggleStudent(student.id)}
+              >
+                <div className="flex items-center gap-3">
+                  <Checkbox
+                    checked={isSelected}
+                    onCheckedChange={() => toggleStudent(student.id)}
+                  />
+                  <div className="flex-1">
+                    <h3 className="font-medium text-text-heading">{student.name}</h3>
+                    <p className="text-sm text-text-body">{student.id} &middot; Grade {student.grade}</p>
+                    <p className="text-sm text-text-label mt-1">Teacher: {student.primaryTeacher}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Desktop Table View */}
+        <div className="hidden md:block bg-surface-card border border-border-default rounded-lg overflow-hidden mb-6">
           <div className="max-h-[500px] overflow-y-auto">
             <table className="w-full">
               <thead className="sticky top-0 bg-surface-page border-b border-border-default">
@@ -112,7 +141,7 @@ export default function AssignStudentsToTeacher() {
           </div>
         </div>
 
-        <div className="flex justify-end gap-4">
+        <div className="flex flex-col-reverse md:flex-row justify-end gap-3 md:gap-4">
           <Button
             variant="outline"
             onClick={() => navigate('/admin/teachers')}

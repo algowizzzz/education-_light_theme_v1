@@ -54,7 +54,7 @@ export default function AdminLogin() {
           Back to Portal Selection
         </Link>
 
-        <Card className="p-8 glass-card rounded-xl border-t-2 border-t-brand">
+        <Card className="p-5 md:p-8 glass-card rounded-xl border-t-2 border-t-brand">
           {/* Header — 1.png full logo with tagline */}
           <div className="text-center mb-8">
             <img src="/logos/png-transparent/1.png" alt="BehaveBridge" className="w-48 h-auto mx-auto mb-4" />
