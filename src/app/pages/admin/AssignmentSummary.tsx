@@ -194,7 +194,7 @@ export default function AssignmentSummary() {
                   {ASSIGNMENT_DATA.unassignedToTeacher.map((student) => (
                     <div
                       key={student.id}
-                      className="flex items-center justify-between p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
+                      className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
                     >
                       <div>
                         <p className="font-medium text-text-heading">{student.name}</p>
@@ -206,7 +206,7 @@ export default function AssignmentSummary() {
                         variant="outline"
                         size="sm"
                         onClick={() => navigate(`/admin/students/${student.id}/assign-teacher`)}
-                        className="border-border-default"
+                        className="border-border-default w-full md:w-auto"
                       >
                         Assign Teacher
                         <ChevronRight className="w-4 h-4 ml-1" />
@@ -238,7 +238,7 @@ export default function AssignmentSummary() {
                   {ASSIGNMENT_DATA.unassignedToExpert.map((student) => (
                     <div
                       key={student.id}
-                      className="flex items-center justify-between p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
+                      className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
                     >
                       <div>
                         <p className="font-medium text-text-heading">{student.name}</p>
@@ -250,7 +250,7 @@ export default function AssignmentSummary() {
                         variant="outline"
                         size="sm"
                         onClick={() => navigate(`/admin/students/${student.id}/assign-expert`)}
-                        className="border-border-default"
+                        className="border-border-default w-full md:w-auto"
                       >
                         Assign Expert
                         <ChevronRight className="w-4 h-4 ml-1" />
@@ -282,7 +282,7 @@ export default function AssignmentSummary() {
                   {ASSIGNMENT_DATA.noParentLinked.map((student) => (
                     <div
                       key={student.id}
-                      className="flex items-center justify-between p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
+                      className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
                     >
                       <div>
                         <p className="font-medium text-text-heading">{student.name}</p>
@@ -294,7 +294,7 @@ export default function AssignmentSummary() {
                         variant="outline"
                         size="sm"
                         onClick={() => navigate(`/admin/students/${student.id}/assign-parent`)}
-                        className="border-border-default"
+                        className="border-border-default w-full md:w-auto"
                       >
                         Link Parent
                         <ChevronRight className="w-4 h-4 ml-1" />
@@ -326,7 +326,7 @@ export default function AssignmentSummary() {
                   {ASSIGNMENT_DATA.orphanParents.map((parent) => (
                     <div
                       key={parent.id}
-                      className="flex items-center justify-between p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
+                      className="flex flex-col md:flex-row md:items-center justify-between gap-2 p-3 bg-card border border-border-light rounded-lg hover:bg-table-row-hover"
                     >
                       <div>
                         <p className="font-medium text-text-heading">{parent.name}</p>
@@ -348,7 +348,7 @@ export default function AssignmentSummary() {
                         variant="outline"
                         size="sm"
                         onClick={() => navigate(`/admin/parents/${parent.id}/link`)}
-                        className="border-border-default"
+                        className="border-border-default w-full md:w-auto"
                       >
                         Link to Student
                         <ChevronRight className="w-4 h-4 ml-1" />
