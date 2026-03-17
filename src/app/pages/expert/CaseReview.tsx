@@ -422,7 +422,7 @@ This incident represents the third math-related escalation this week, showing a 
             <CardTitle className="text-lg text-text-heading">Student</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
               <div>
                 <div className="text-text-heading font-medium mb-1">{caseData.student.name}</div>
                 <div className="text-sm text-text-body">
@@ -430,7 +430,7 @@ This incident represents the third math-related escalation this week, showing a 
                 </div>
               </div>
               <Link to={`/expert/students/${caseData.student.id}`}>
-                <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page">
+                <Button variant="outline" className="border-brand-dark/40 text-brand-dark bg-surface-card hover:bg-surface-page w-full md:w-auto">
                   View Full Profile
                 </Button>
               </Link>

@@ -167,7 +167,7 @@ export default function AccountSettings() {
             <p className="text-sm text-text-body">Manage your active sessions across devices</p>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
               <div>
                 <p className="text-text-heading mb-1">Active Sessions</p>
                 <p className="text-sm text-text-body">You are currently logged in on 2 devices</p>
@@ -176,7 +176,7 @@ export default function AccountSettings() {
                 <AlertDialogTrigger asChild>
                   <Button
                     variant="outline"
-                    className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page"
+                    className="border-border-strong text-text-heading bg-surface-card hover:bg-surface-page w-full md:w-auto"
                   >
                     Logout from All Devices
                   </Button>
